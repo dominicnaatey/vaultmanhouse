@@ -19,7 +19,7 @@ export default function AboutSection() {
 
         <div className="w-full h-[300px] md:h-[500px] rounded-4xl overflow-hidden relative mb-16 shadow-xl shadow-black/5 group">
           <Image
-            src="images/img01.webp"
+            src="/images/img02.webp"
             alt="Harvester overview"
             fill
             className="object-cover transition-transform duration-1000 group-hover:scale-105"
