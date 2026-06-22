@@ -3,10 +3,10 @@ import { Sprout, Tractor } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[85vh] min-h-[600px] w-full bg-[#3B4631] text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-50 mix-blend-overlay">
+    <section className="relative h-[85vh] min-h-[600px] w-full text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100">
         <Image
-          src="https://placehold.co/1920x1080/3B4631/F3E287.webp?text=Golden+Wheat"
+          src="/images/soybeans.webp"
           fill
           className="object-cover"
           alt="Wheat field"
