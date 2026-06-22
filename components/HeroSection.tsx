@@ -1,8 +1,26 @@
+ 'use client';
+
+import * as React from 'react';
+import { format } from 'date-fns';
 import Image from 'next/image';
-import { Sprout, Tractor } from 'lucide-react';
+import { CalendarIcon, Sprout, Tractor } from 'lucide-react';
 import Button from './ui/Button';
+import { Calendar } from './ui/calendar';
+import { Input } from './ui/input';
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from './ui/select';
+import { Textarea } from './ui/textarea';
+import { cn } from '@/lib/utils';
 
 export default function HeroSection() {
+  const [appointmentDate, setAppointmentDate] = React.useState<Date | undefined>();
+
   return (
     <section className="relative w-full min-h-[980px] lg:min-h-[760px] xl:h-[85vh] text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-100">
@@ -33,38 +51,46 @@ export default function HeroSection() {
               </p>
             </div>
             <form className="grid grid-cols-1 gap-4">
-              <input
-                type="text"
-                placeholder="Full name"
-                className="h-12 rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm outline-none transition-colors placeholder:text-[#2D2926]/45 focus:border-[#59644D]"
-              />
-              <input
-                type="email"
-                placeholder="Email address"
-                className="h-12 rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm outline-none transition-colors placeholder:text-[#2D2926]/45 focus:border-[#59644D]"
-              />
+              <Input type="text" placeholder="Full name" />
+              <Input type="email" placeholder="Email address" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  type="date"
-                  className="h-12 rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm outline-none transition-colors focus:border-[#59644D]"
-                />
-                <select
-                  defaultValue=""
-                  className="h-12 rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm outline-none transition-colors text-[#2D2926]/70 focus:border-[#59644D]"
-                >
-                  <option value="" disabled>
-                    Service
-                  </option>
-                  <option>Crop Planning</option>
-                  <option>Seed Supply</option>
-                  <option>Soil Assessment</option>
-                </select>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <button
+                      type="button"
+                      className={cn(
+                        'flex h-12 w-full items-center justify-between rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm text-left text-[#2D2926] shadow-sm outline-none transition-[border-color,box-shadow] focus-visible:border-[#59644D] focus-visible:ring-2 focus-visible:ring-[#59644D]/15',
+                        !appointmentDate && 'text-[#2D2926]/45'
+                      )}
+                    >
+                      <span>
+                        {appointmentDate
+                          ? format(appointmentDate, 'PPP')
+                          : 'Pick a date'}
+                      </span>
+                      <CalendarIcon className="h-4 w-4 text-[#2D2926]/55" />
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-auto p-0" align="start">
+                    <Calendar
+                      mode="single"
+                      selected={appointmentDate}
+                      onSelect={setAppointmentDate}
+                    />
+                  </PopoverContent>
+                </Popover>
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Service" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="crop-planning">Crop Planning</SelectItem>
+                    <SelectItem value="seed-supply">Seed Supply</SelectItem>
+                    <SelectItem value="soil-assessment">Soil Assessment</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
-              <textarea
-                rows={4}
-                placeholder="Tell us about your farm needs"
-                className="rounded-[1.5rem] border border-[#2D2926]/10 bg-white/80 px-5 py-4 text-sm outline-none transition-colors placeholder:text-[#2D2926]/45 focus:border-[#59644D] resize-none"
-              />
+              <Textarea rows={4} placeholder="Tell us about your farm needs" />
               <Button className="w-full justify-center">
                 Book Appointment
               </Button>
