@@ -22,7 +22,7 @@ export default function AboutSection() {
             src="/images/img02.webp"
             alt="Harvester overview"
             fill
-            className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            className="object-cover transition-transform duration-1000 group-hover:scale-101"
           />
         </div>
 
