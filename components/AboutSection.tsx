@@ -24,6 +24,7 @@ export default function AboutSection() {
             fill
             className="object-cover transition-transform duration-650 group-hover:scale-101"
           />
+          <div className="absolute inset-0 bg-[#59644D]/40" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
