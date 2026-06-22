@@ -22,9 +22,9 @@ export default function AboutSection() {
             src="/images/img02.webp"
             alt="Harvester overview"
             fill
-            className="object-cover transition-transform duration-650 group-hover:scale-101"
+            className="object-cover transition-transform duration-650 group-hover:scale-100.8"
           />
-          <div className="absolute inset-0 bg-[#59644D]/40" />
+          <div className="absolute inset-0 bg-[#59644D]/60" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
