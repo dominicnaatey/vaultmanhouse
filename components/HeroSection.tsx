@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Sprout, Tractor } from 'lucide-react';
 
-import BookingForm from './BookingForm/BookingForm';
+import BookingForm from './booking form/BookingForm';
 
 export default function HeroSection() {
   return (
