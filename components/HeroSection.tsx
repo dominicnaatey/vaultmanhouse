@@ -8,9 +8,10 @@ export default function HeroSection() {
         <Image
           src="/images/soybeans.webp"
           fill
-          className="object-cover"
+          className="object-cover scale-x-[-1]"
           alt="Wheat field"
         />
+        <div className="absolute inset-0 bg-[#59644D]/40" />
       </div>
 
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start gap-8 mt-8">
