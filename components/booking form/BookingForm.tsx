@@ -24,9 +24,9 @@ export default function BookingForm() {
   return (
     <div className="rounded-[2rem] bg-[#F9F7F2]/92 text-[#2D2926] backdrop-blur-xl border border-white/25 shadow-2xl p-6 md:p-8">
       <div className="mb-6">
-        <span className="inline-flex rounded-full border border-[#2D2926]/15 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#59644D]">
+        {/* <span className="inline-flex rounded-full border border-[#2D2926]/15 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#59644D]">
           Appointment
-        </span>
+        </span> */}
         <h2 className="font-serif text-3xl md:text-4xl leading-tight mt-4 mb-3">
           Book a Farm Visit
         </h2>
@@ -44,7 +44,7 @@ export default function BookingForm() {
               <button
                 type="button"
                 className={cn(
-                  'flex h-12 w-full items-center justify-between rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm text-left text-[#2D2926] shadow-sm outline-none transition-[border-color,box-shadow] focus-visible:border-[#59644D] focus-visible:ring-2 focus-visible:ring-[#59644D]/15',
+                  'flex h-12 w-full items-center justify-between rounded-full border border-[#2D2926]/10 bg-white/80 px-5 text-sm text-left text-[#2D2926] outline-none transition-[border-color,box-shadow] focus-visible:border-[#59644D] focus-visible:ring-2 focus-visible:ring-[#59644D]/15',
                   !appointmentDate && 'text-[#2D2926]/45'
                 )}
               >
