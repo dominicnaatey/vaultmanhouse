@@ -10,7 +10,7 @@ const FEATURES = [
 
 export default function FeaturesStrip() {
   return (
-    <div className="flex overflow-x-auto scrollbar-hide py-10 px-6 md:px-16 gap-4 bg-[#F9F7F2] pb-16">
+    <div className="flex overflow-x-auto overflow-y-hidden scrollbar-hide [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-10 px-6 md:px-16 gap-4 bg-[#F9F7F2] pb-16">
       {FEATURES.map((item, i) => (
         <React.Fragment key={i}>
           <div className="min-w-55 h-15 rounded-full relative overflow-hidden shadow-sm shrink-0 group">
