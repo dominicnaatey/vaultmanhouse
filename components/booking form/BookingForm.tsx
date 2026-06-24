@@ -27,7 +27,7 @@ export default function BookingForm() {
         {/* <span className="inline-flex rounded-full border border-[#2D2926]/15 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#59644D]">
           Appointment
         </span> */}
-        <h2 className="font-serif text-3xl md:text-4xl leading-tight mt-4 mb-3">
+        <h2 className="font-hero text-3xl md:text-4xl leading-tight mt-4 mb-3">
           Book a Farm Visit
         </h2>
         <p className="text-sm text-[#2D2926]/70 leading-relaxed">

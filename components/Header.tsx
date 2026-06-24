@@ -12,7 +12,7 @@ export default function Header() {
         <span>VerdaAgro</span>
       </div>
 
-      <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
+      <nav className="font-ui hidden lg:flex items-center gap-8 text-sm">
         {NAV_ITEMS.map((item) => (
           <a
             key={item}

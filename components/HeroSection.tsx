@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 mt-8 flex flex-col items-start gap-20 lg:absolute lg:top-1/2 lg:left-16 lg:mt-0 lg:-translate-y-1/2">
-        <h1 className="font-serif font-semibold text-6xl md:text-7xl max-w-230 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <h1 className="font-hero text-6xl md:text-7xl max-w-230 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
         <p className="text-lg md:text-3xl max-w-230 font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">

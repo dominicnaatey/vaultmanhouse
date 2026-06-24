@@ -8,7 +8,7 @@ interface ButtonProps {
   variant?: ButtonVariant;
 }
 
-const base = "inline-flex items-center justify-center rounded-full px-8 py-3 font-medium transition-all duration-300 text-sm";
+const base = "font-ui inline-flex items-center justify-center rounded-full px-8 py-3 transition-all duration-300 text-sm";
 
 const variants: Record<ButtonVariant, string> = {
   primary: "bg-[#F3E287] text-[#2D2926] hover:bg-[#E5D474]",
