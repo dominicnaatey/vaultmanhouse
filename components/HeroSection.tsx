@@ -10,17 +10,17 @@ export default function HeroSection() {
         <Image
           src="/images/soybeans.webp"
           fill
-          className="object-cover scale-x-[-1]"
+          className="object-cover scale-x-[1]"
           alt="Wheat field"
         />
-        <div className="absolute inset-0 bg-[#59644D]/50" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#2B3521] via-[#2B3521]/60 to-[#2B3521]/20" />
       </div>
 
       <div className="relative z-10 mt-8 flex flex-col items-start gap-20 lg:absolute lg:top-1/2 lg:left-16 lg:mt-0 lg:-translate-y-1/2">
-        <h1 className="font-serif font-bold text-6xl md:text-[78px] max-w-230 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <h1 className="font-serif font-semibold text-6xl md:text-7xl max-w-230 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
-        <p className="text-lg md:text-xl max-w-xl font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+        <p className="text-lg md:text-3xl max-w-230 font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
           The future rests on agribusiness and its supply chain network
         </p>
       </div>
