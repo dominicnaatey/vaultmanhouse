@@ -3,12 +3,12 @@ import Button from './ui/Button';
 
 export default function AboutSection() {
   return (
-    <section className="py-24 px-6 md:px-16 bg-[#F9F7F2]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-36 px-6 md:px-16 bg-[#F9F7F2]">
+      <div className="md:max-w-6xl lg:max-w-7xl mx-auto">
         <div className="flex flex-col gap-2 mb-10">
-          {/* <span className="text-xs font-bold uppercase tracking-wider text-gray-500 border border-gray-300 rounded-full px-4 py-1.5 w-max mb-4">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#59644D]/80 border-2 border-[#59644D]/50 rounded-full px-4 py-1.5 w-max mb-4">
             About Company
-          </span> */}
+          </span>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 w-full">
             <h2 className="font-hero text-4xl md:text-6xl text-[#2D2926] max-w-4xl leading-tight">
               Building Value Across Africa&apos;s Agribusiness Supply Chain
