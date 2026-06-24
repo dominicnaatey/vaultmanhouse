@@ -40,14 +40,14 @@ export default function Footer() {
           <p className="text-base text-white/80 leading-relaxed font-medium">
             The future rests on agribusiness and its supply chain network.
           </p>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-[#FDF3C8]">
             <a href="mailto:info@vaultmanhouse.com" className="text-3xl hover:text-[#F3E287] transition-colors inline-block w-max">
               info@vaultmanhouse.com
             </a>
-            <a href="tel:+233551495336" className="text-xl font-medium tracking-wide hover:text-[#F3E287] transition-colors inline-block w-max">
+            <a href="tel:+233551495336" className="text-3xl font-medium tracking-wide hover:text-[#F3E287] transition-colors inline-block w-max">
               +233 55 149 5336
             </a>
-            <div className="flex items-start gap-2 max-w-sm mt-3 text-white/65">
+            <div className="flex items-start gap-2 max-w-sm mt-3 text-white/85">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
               <p className="text-sm font-normal leading-relaxed">
                 No.7 Zeus Street, Otu Adzin Road Spintex - Kotobabi, Tema - Accra
