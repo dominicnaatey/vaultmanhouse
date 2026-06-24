@@ -16,7 +16,7 @@ export default function BlogSection() {
             Latest News
           </span>
           <div className="flex flex-col md:flex-row justify-between md:items-end gap-8">
-            <h2 className="font-serif text-5xl md:text-6xl text-[#2D2926] max-w-xl leading-[1.1]">
+            <h2 className="font-hero text-5xl md:text-6xl text-[#2D2926] max-w-xl leading-[1.1]">
               Explore Our Latest News &amp; Tips
             </h2>
             <Button variant="dark" className="mb-2">Read More</Button>
@@ -38,7 +38,7 @@ export default function BlogSection() {
                 </div>
               </div>
               <p className="text-xs font-mono font-medium tracking-wide text-gray-500 mt-2">{item.date}</p>
-              <h3 className="text-2xl font-serif text-[#2D2926] leading-tight group-hover:text-[#8F9A80] transition-colors">
+              <h3 className="font-hero text-2xl text-[#2D2926] leading-tight group-hover:text-[#8F9A80] transition-colors">
                 {item.title}
               </h3>
               <div className="flex items-center gap-2 text-sm text-[#2D2926] font-bold tracking-wide uppercase mt-2 group-hover:text-[#8F9A80] transition-colors">

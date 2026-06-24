@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 w-full mb-24 overflow-hidden flex justify-center -mt-10">
-        <h1 className="font-serif text-[18vw] leading-[0.7] font-bold text-[#F3E287] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
+        <h1 className="font-hero text-[18vw] leading-[0.7] text-[#F3E287] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
           VerdaAgro
         </h1>
       </div>
@@ -51,7 +51,7 @@ export default function Footer() {
 
         {/* Useful Links */}
         <div className="lg:w-1/5">
-          <h4 className="text-xl font-serif mb-8 text-[#F3E287]">Useful Links</h4>
+          <h4 className="font-hero text-xl mb-8 text-[#F3E287]">Useful Links</h4>
           <ul className="flex flex-col gap-4 text-sm font-medium text-white/80">
             {USEFUL_LINKS.map((link) => (
               <li key={link}>
@@ -63,7 +63,7 @@ export default function Footer() {
 
         {/* Subscribe */}
         <div className="lg:w-1/3">
-          <h4 className="text-xl font-serif mb-8 text-[#F3E287]">Subscribe</h4>
+          <h4 className="font-hero text-xl mb-8 text-[#F3E287]">Subscribe</h4>
           <form className="relative mb-6 group">
             <input
               type="email"

@@ -51,7 +51,7 @@ export default function AccordionSection() {
         <span className="text-xs font-bold uppercase tracking-wider text-white/70 border border-white/20 rounded-full px-4 py-1.5 mb-10 w-max">
           Why Choose Vaultman House
         </span>
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
+        <h2 className="font-hero text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
           Built for Reliable Agro Trade Across West Africa
         </h2>
 
@@ -69,7 +69,7 @@ export default function AccordionSection() {
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                   className="flex w-full items-center justify-between gap-6 text-left cursor-pointer group"
                 >
-                  <h3 className={`text-2xl font-medium transition-colors ${isOpen ? 'text-[#F3E287]' : 'group-hover:text-[#F3E287]'}`}>
+                  <h3 className={`font-hero text-2xl transition-colors ${isOpen ? 'text-[#F3E287]' : 'group-hover:text-[#F3E287]'}`}>
                     {item.title}
                   </h3>
                   <div className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${isOpen ? 'border-[#F3E287]' : 'border-white/30 group-hover:border-[#F3E287]'}`}>

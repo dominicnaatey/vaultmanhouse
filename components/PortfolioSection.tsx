@@ -12,7 +12,7 @@ export default function PortfolioSection() {
     <section className="py-32 px-6 md:px-16 bg-[#8F9A80]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-12 mb-20 relative">
-          <h2 className="font-serif text-5xl sm:text-6xl md:text-8xl text-white leading-[1.1] tracking-tight">
+          <h2 className="font-hero text-5xl sm:text-6xl md:text-8xl text-white leading-[1.1] tracking-tight">
             From Seed<br /><span className="text-[#F3E287]">to Harvest</span>
           </h2>
           <div className="lg:absolute lg:right-0 lg:top-8 max-w-sm">
@@ -41,7 +41,7 @@ export default function PortfolioSection() {
                   </span>
                 ))}
               </div>
-              <h3 className="text-3xl font-serif text-white group-hover:text-[#F3E287] transition-colors">
+              <h3 className="font-hero text-3xl text-white group-hover:text-[#F3E287] transition-colors">
                 {item.title}
               </h3>
             </div>

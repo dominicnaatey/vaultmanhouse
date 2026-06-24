@@ -18,7 +18,7 @@ export default function AgriPartnerSection() {
           <span className="text-xs font-bold uppercase tracking-wider text-gray-500 border border-gray-300 rounded-full px-4 py-1.5 mb-8 inline-block">
             Agricultural Support
           </span>
-          <h2 className="font-serif text-5xl md:text-6xl text-[#2D2926] leading-[1.1] sticky top-32">
+          <h2 className="font-hero text-5xl md:text-6xl text-[#2D2926] leading-[1.1] sticky top-32">
             Your<br />Agriculture<br />Partner
           </h2>
         </div>
@@ -29,7 +29,7 @@ export default function AgriPartnerSection() {
               <div className="w-16 h-16 rounded-2xl bg-[#FDF3C8] flex items-center justify-center text-[#2D2926] group-hover:scale-110 transition-transform duration-300 shadow-sm">
                 {React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'w-8 h-8' })}
               </div>
-              <h3 className="text-2xl font-serif text-[#2D2926] whitespace-pre-line leading-tight group-hover:text-[#8F9A80] transition-colors">
+              <h3 className="font-hero text-2xl text-[#2D2926] whitespace-pre-line leading-tight group-hover:text-[#8F9A80] transition-colors">
                 {item.title}
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed font-medium">

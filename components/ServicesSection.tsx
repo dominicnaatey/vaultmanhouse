@@ -44,7 +44,7 @@ export default function ServicesSection() {
             <span className="text-xs font-bold uppercase tracking-wider text-white border border-white/30 rounded-full px-4 py-1.5 mb-6 inline-block">
               Our Services
             </span>
-            <h2 className="font-serif text-4xl md:text-6xl text-white max-w-2xl leading-tight">
+            <h2 className="font-hero text-4xl md:text-6xl text-white max-w-2xl leading-tight">
               What Vaultman House Offers Across The Supply Chain
             </h2>
           </div>
@@ -63,7 +63,7 @@ export default function ServicesSection() {
               />
               <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-3">
                 <span className="text-[#F3E287] text-sm font-mono tracking-widest">{item.id}</span>
-                <h3 className="text-white text-2xl font-serif">{item.title}</h3>
+                <h3 className="font-hero text-white text-2xl">{item.title}</h3>
                 <p className="text-sm text-white/85 leading-relaxed pr-2">
                   {item.description}
                 </p>

@@ -40,7 +40,7 @@ export default function HeroSection() {
             <span className="text-sm font-medium leading-tight">Crop Protection<br />Services</span>
           </div>
         </div>
-        <h1 className="hidden lg:block font-serif text-6xl md:text-8xl leading-none text-right opacity-90 pointer-events-auto lg:absolute lg:right-0 lg:bottom-0 lg:pr-6">
+        <h1 className="hidden lg:block font-hero text-6xl md:text-8xl leading-none text-right opacity-90 pointer-events-auto lg:absolute lg:right-0 lg:bottom-0 lg:pr-6">
           Driven by<br />Innovation
         </h1>
       </div> */}

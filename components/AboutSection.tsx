@@ -10,7 +10,7 @@ export default function AboutSection() {
             About Company
           </span> */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 w-full">
-            <h2 className="font-serif text-4xl md:text-6xl text-[#2D2926] max-w-4xl leading-tight">
+            <h2 className="font-hero text-4xl md:text-6xl text-[#2D2926] max-w-4xl leading-tight">
               Building Value Across Africa&apos;s Agribusiness Supply Chain
             </h2>
             <Button className="mb-2">About Us</Button>
