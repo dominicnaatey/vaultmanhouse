@@ -11,9 +11,9 @@ export default function AboutSection() {
           </span> */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 w-full">
             <h2 className="font-serif text-4xl md:text-6xl text-[#2D2926] max-w-2xl leading-tight">
-              Modern Solutions for Traditional Challenges
+              Building Value Across Africa&apos;s Agribusiness Supply Chain
             </h2>
-            <Button className="mb-2">Read More</Button>
+            <Button className="mb-2">About Us</Button>
           </div>
         </div>
 
@@ -29,10 +29,10 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
           <p className="text-2xl lg:text-3xl text-[#2D2926] font-medium leading-normal">
-            We don&apos;t just grow crops &mdash; we grow trust, opportunity, and a better future. We are dedicated to supporting farmers, enhancing food security, and promoting sustainable agriculture.
+            Vaultman House Agro Commodities was founded in 2020 to build a diversified conglomerate across key African sectors, starting with large-scale agro-commodity trade in Ghana, Burkina Faso, and Mali.
           </p>
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            With years of experience and a deep understanding of local and global challenges, we provide high-quality seeds, modern farming solutions, expert field support, and agri-tech innovations that empower growers to increase productivity and protect natural resources. Our mission is rooted in more than just farming &mdash; it&apos;s about building partnerships, preserving the land, and helping communities thrive.
+            With a supply capacity of over 4,000MT+ of soybeans, we trade, produce, process, export, and transport agricultural commodities to give our clients maximum value. As we expand into processing and export, our goal is to create a sustainable agribusiness ecosystem driven by innovation, quality, transparency, and customer satisfaction.
           </p>
         </div>
       </div>
