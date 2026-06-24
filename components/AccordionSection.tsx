@@ -36,18 +36,18 @@ export default function AccordionSection() {
   const [openIndex, setOpenIndex] = React.useState(0);
 
   return (
-    <section className="flex flex-col lg:flex-row min-h-162">
-      <div className="w-full lg:w-1/2 relative min-h-100">
+    <section className="relative flex min-h-162 overflow-hidden">
+      <div className="absolute inset-0">
         <Image
-          src="/images/soybeans.webp"
+          src="/images/img05.webp"
           fill
           alt="Soybean commodity supply"
-          className="object-cover"
+          className="object-cover scale-x-[-1]"
         />
-        <div className="absolute inset-0 bg-[#2D2926]/20" />
+        <div className="absolute inset-0 bg-[#2D2926]/35" />
       </div>
 
-      <div className="w-full lg:w-1/2 bg-[#5F4B3C] text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center">
+      <div className="relative z-10 ml-auto w-full lg:w-1/2 bg-[#5F4B3C]/88 text-white p-8 md:p-16 lg:p-24 backdrop-blur-[2px] flex flex-col justify-center">
         <span className="text-xs font-bold uppercase tracking-wider text-white/70 border border-white/20 rounded-full px-4 py-1.5 mb-10 w-max">
           Why Choose Vaultman House
         </span>
