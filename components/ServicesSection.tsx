@@ -4,18 +4,35 @@ import { ArrowRight, Leaf, Sprout, Users, Droplets } from 'lucide-react';
 import Button from './ui/Button';
 
 const SERVICES = [
-  { id: '01', title: 'Planting Material' },
-  { id: '02', title: 'Soil Solutions' },
-  { id: '03', title: 'Crop Protection' },
-  { id: '04', title: 'Innovation Services' },
+  {
+    id: '01',
+    title: 'Commodity Trading',
+    description:
+      'We export premium agricultural commodities including soybeans, corn, sesame seeds, and groundnuts with strict attention to international standards.',
+    image: '/images/soybeans.webp',
+  },
+  {
+    id: '02',
+    title: 'Exportation',
+    description:
+      'We move agricultural materials into value-added export channels that support food, pharmaceutical, and animal feed industries.',
+    image: '/images/homehero.webp',
+  },
+  {
+    id: '03',
+    title: 'Processing',
+    description:
+      'We transform raw agricultural materials into semi-finished and finished goods such as cooking oil and flour to create more value locally.',
+    image: '/images/img01.webp',
+  },
 ];
 
 const LOGOS = [
-  { icon: <Leaf />, text: 'SmartSeed' },
-  { icon: <Sprout />, text: 'HARVEST' },
-  { icon: <Leaf />, text: 'simpleaf' },
-  { icon: <Users />, text: 'THE ORGANIC FARM' },
-  { icon: <Droplets />, text: 'farmburst' },
+  { icon: <Leaf />, text: 'Founded 2020' },
+  { icon: <Sprout />, text: '4,000MT+ Supply' },
+  { icon: <Users />, text: 'Ghana' },
+  { icon: <Users />, text: 'Burkina Faso' },
+  { icon: <Droplets />, text: 'Mali' },
 ];
 
 export default function ServicesSection() {
@@ -25,21 +42,21 @@ export default function ServicesSection() {
         <div className="flex flex-col md:flex-row justify-between lg:items-end gap-8 mb-16">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-white border border-white/30 rounded-full px-4 py-1.5 mb-6 inline-block">
-              Farm Solutions
+              Our Services
             </span>
             <h2 className="font-serif text-4xl md:text-6xl text-white max-w-2xl leading-tight">
-              What Our Agricultural Company Offers
+              What Vaultman House Offers Across The Supply Chain
             </h2>
           </div>
-          <Button className="mb-2">Read More</Button>
+          <Button className="mb-2">Contact Us</Button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {SERVICES.map((item, i) => (
             <div key={i} className="group relative h-[420px] rounded-4xl overflow-hidden cursor-pointer shadow-lg">
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-300 group-hover:opacity-80" />
               <Image
-                src={`https://placehold.co/400x600/313c28/F9F7F2.webp?text=${item.title.replace(' ', '+')}`}
+                src={item.image}
                 fill
                 alt={item.title}
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -47,6 +64,9 @@ export default function ServicesSection() {
               <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-3">
                 <span className="text-[#F3E287] text-sm font-mono tracking-widest">{item.id}</span>
                 <h3 className="text-white text-2xl font-serif">{item.title}</h3>
+                <p className="text-sm text-white/85 leading-relaxed pr-2">
+                  {item.description}
+                </p>
                 <div className="w-10 h-10 rounded-full bg-[#F3E287] flex items-center justify-center mt-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   <ArrowRight className="w-5 h-5 text-[#2D2926]" />
                 </div>
@@ -55,9 +75,9 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-8 mt-24 opacity-70 px-4">
+        <div className="flex flex-wrap items-center justify-center gap-8 mt-24 opacity-80 px-4">
           {LOGOS.map((item, i) => (
-            <div key={i} className="flex items-center gap-2 text-white font-serif text-xl tracking-wide hover:opacity-100 transition-opacity cursor-pointer">
+            <div key={i} className="flex items-center gap-2 text-white font-serif text-xl tracking-wide hover:opacity-100 transition-opacity cursor-default">
               {React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'w-6 h-6 text-[#F3E287]' })}
               {item.text}
             </div>
