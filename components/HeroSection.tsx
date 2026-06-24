@@ -5,7 +5,7 @@ import BookingForm from './booking form/BookingForm';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-245 lg:min-h-190 xl:h-[85vh] text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
+    <section className="relative w-full h-screen text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-100">
         <Image
           src="/images/soybeans.webp"
@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mt-8">
-        <h1 className="font-serif text-6xl md:text-[78px] max-w-3xl leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <h1 className="font-serif text-6xl md:text-[78px] max-w-200 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
         <div className="w-full max-w-md lg:self-start animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
@@ -25,7 +25,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col items-start gap-8 mt-auto mb-20 md:mb-0">
+      <div className="relative z-10 flex flex-col items-start gap-8 mb-20 md:mb-0">
         <p className="text-lg md:text-xl max-w-xl font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
           The future rests on agribusiness and its supply chain network
         </p>
