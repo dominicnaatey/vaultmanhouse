@@ -20,23 +20,23 @@ const ACCORDION_ITEMS = [
     content:
       'Our team focuses on fast, dependable supply support that helps clients meet targets, deadlines, and quality expectations without compromise.',
   },
-  {
-    title: 'Regional Reach',
-    content:
-      'From Ghana to Burkina Faso and Mali, our operations are built around strong market knowledge and a practical understanding of cross-border agribusiness trade.',
-  },
-  {
-    title: 'Processing And Export Growth',
-    content:
-      'Beyond commodity trading, we are expanding into processing and export to create a sustainable agribusiness ecosystem that delivers even greater value.',
-  },
+  // {
+  //   title: 'Regional Reach',
+  //   content:
+  //     'From Ghana to Burkina Faso and Mali, our operations are built around strong market knowledge and a practical understanding of cross-border agribusiness trade.',
+  // },
+  // {
+  //   title: 'Processing And Export Growth',
+  //   content:
+  //     'Beyond commodity trading, we are expanding into processing and export to create a sustainable agribusiness ecosystem that delivers even greater value.',
+  // },
 ];
 
 export default function AccordionSection() {
   const [openIndex, setOpenIndex] = React.useState(0);
 
   return (
-    <section className="relative flex min-h-162 overflow-hidden">
+    <section className="relative flex min-h-150 overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/images/img05.webp"
@@ -47,8 +47,8 @@ export default function AccordionSection() {
         <div className="absolute inset-0 bg-[#2D2926]/35" />
       </div>
 
-      <div className="relative z-10 ml-auto w-full lg:w-1/2 bg-[#5F4B3C]/88 text-white p-8 md:p-16 lg:p-24 backdrop-blur-[2px] flex flex-col justify-center">
-        <span className="text-xs font-bold uppercase tracking-wider text-white/70 border border-white/20 rounded-full px-4 py-1.5 mb-10 w-max">
+      <div className="relative z-10 ml-auto w-full lg:w-1/2 bg-black/5 text-white p-8 md:p-16 lg:p-34 backdrop-blur-xl flex flex-col justify-center">
+        <span className="text-xs font-bold uppercase tracking-wider text-white/80 border-2 border-white/50 rounded-full px-4 py-1.5 mb-10 w-max">
           Why Choose Vaultman House
         </span>
         <h2 className="font-hero text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
