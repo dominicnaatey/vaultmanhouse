@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { motion } from 'framer-motion';
 import { Leaf, ShoppingBag, Search, ChevronRight, Menu } from 'lucide-react';
 import Button from './ui/Button';
 
@@ -13,6 +14,7 @@ export default function Header() {
 
   React.useEffect(() => {
     let lastScrollY = window.scrollY;
+    let hideTimeout: ReturnType<typeof setTimeout> | undefined;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -21,10 +23,22 @@ export default function Header() {
       setIsAtTop(isNearTop);
 
       if (isNearTop) {
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+        }
         setIsHidden(false);
       } else if (currentScrollY > lastScrollY + 4) {
-        setIsHidden(true);
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+        }
+
+        hideTimeout = setTimeout(() => {
+          setIsHidden(true);
+        }, 140);
       } else if (currentScrollY < lastScrollY - 4) {
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+        }
         setIsHidden(false);
       }
 
@@ -34,14 +48,25 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+      }
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-md transition-transform duration-300 ${
-        isHidden ? '-translate-y-full' : 'translate-y-0'
-      } ${
+    <motion.header
+      initial={false}
+      animate={{
+        y: isHidden ? '-100%' : '0%',
+      }}
+      transition={{
+        duration: isHidden ? 0.35 : 0.45,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className={`sticky top-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-md will-change-transform ${
         isAtTop
           ? 'bg-[#F9F7F2]/90 border-b border-[#2D2926]/5'
           : 'bg-[#F9F7F2]/95 border-b border-[#2D2926]/10 shadow-sm'
@@ -79,6 +104,6 @@ export default function Header() {
           <Menu className="w-6 h-6" />
         </button>
       </div>
-    </header>
+    </motion.header>
   );
 }
