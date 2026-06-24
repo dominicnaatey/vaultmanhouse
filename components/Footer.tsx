@@ -40,11 +40,11 @@ export default function Footer() {
           <p className="text-base text-white/80 leading-relaxed font-medium">
             The future rests on agribusiness and its supply chain network.
           </p>
-          <div className="flex flex-col gap-2 text-[#FDF3C8]">
-            <a href="mailto:info@vaultmanhouse.com" className="text-3xl hover:text-[#F3E287] transition-colors inline-block w-max">
+          <div className="flex flex-col gap-2 text-[#F3E287]">
+            <a href="mailto:info@vaultmanhouse.com" className="text-3xl hover:text-[#FDF3C8] transition-colors inline-block w-max">
               info@vaultmanhouse.com
             </a>
-            <a href="tel:+233551495336" className="text-3xl font-medium tracking-wide hover:text-[#F3E287] transition-colors inline-block w-max">
+            <a href="tel:+233551495336" className="text-3xl font-medium tracking-wide hover:text-[#FDF3C8] transition-colors inline-block w-max">
               +233 55 149 5336
             </a>
             <div className="flex items-start gap-2 max-w-sm mt-3 text-white/85">
@@ -70,8 +70,8 @@ export default function Footer() {
         </div>
 
         {/* Useful Links */}
-        <div className="lg:w-1/5 lg:border-l lg:border-white/15 lg:pl-10">
-          <h4 className="font-hero text-xl mb-8 text-[#F3E287]">Useful Links</h4>
+        <div className="lg:w-1/5 lg:border-l lg:border-white/15 lg:pl-15">
+          <h4 className="font-hero text-2xl mb-8 text-white">Useful Links</h4>
           <ul className="flex flex-col gap-4 text-sm font-medium text-white/80">
             {USEFUL_LINKS.map((link) => (
               <li key={link.label}>
@@ -83,7 +83,7 @@ export default function Footer() {
 
         {/* Subscribe */}
         <div className="lg:w-1/3">
-          <h4 className="font-hero text-xl mb-8 text-[#F3E287]">Subscribe</h4>
+          <h4 className="font-hero text-2xl mb-8 text-white">Subscribe</h4>
           <form className="relative mb-6 group">
             <input
               type="email"
