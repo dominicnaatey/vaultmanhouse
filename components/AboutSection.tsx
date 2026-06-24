@@ -17,7 +17,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="w-full h-[300px] md:h-[500px] rounded-4xl overflow-hidden relative mb-16 shadow-xl shadow-black/5 group">
+        <div className="w-full h-75 md:h-125 rounded-4xl overflow-hidden relative mb-16 shadow-xl shadow-black/5 group">
           <Image
             src="/images/img02.webp"
             alt="Harvester overview"
