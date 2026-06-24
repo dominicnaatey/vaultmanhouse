@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Sprout, Tractor } from 'lucide-react';
 
 import BookingForm from './booking form/BookingForm';
 
