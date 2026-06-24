@@ -10,10 +10,10 @@ const FEATURES = [
 
 export default function FeaturesStrip() {
   return (
-    <div className="flex py-10 px-6 md:px-16 gap-4 bg-[#F9F7F2] overflow-x-auto pb-16">
+    <div className="flex flex-wrap justify-center py-10 px-6 md:px-16 gap-4 bg-[#F9F7F2] pb-16">
       {FEATURES.map((item, i) => (
         <React.Fragment key={i}>
-          <div className="min-w-45 h-14 rounded-full relative overflow-hidden shadow-sm shrink-0 group">
+          <div className="min-w-55 h-15 rounded-full relative overflow-hidden shadow-sm shrink-0 group">
             <Image
               src={item.image}
               fill
@@ -22,7 +22,7 @@ export default function FeaturesStrip() {
             />
             <div className="absolute inset-0 bg-[#59644D]/35" />
           </div>
-          <div className="min-w-45 h-14 rounded-full bg-[#F3E287] flex items-center justify-center px-5 text-center font-medium text-sm shrink-0 text-[#2D2926] shadow-sm cursor-pointer hover:bg-[#E5D474] transition-colors">
+          <div className="min-w-55 h-15 rounded-full bg-[#F3E287] flex items-center justify-center px-5 text-center font-medium text-lg shrink-0 text-[#2D2926] shadow-sm cursor-pointer hover:bg-[#E5D474] transition-colors">
             {item.name}
           </div>
         </React.Fragment>
