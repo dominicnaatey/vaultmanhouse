@@ -5,7 +5,7 @@ import BookingForm from './booking form/BookingForm';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen text-white flex flex-col justify-between p-6 md:p-16 overflow-hidden">
+    <section className="relative -mt-22 min-h-screen w-full pt-22 text-white flex flex-col justify-between p-6 md:-mt-19 md:pt-24 md:p-16 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-100">
         <Image
           src="/images/soybeans.webp"
@@ -13,7 +13,7 @@ export default function HeroSection() {
           className="object-cover scale-x-[-1]"
           alt="Wheat field"
         />
-        <div className="absolute inset-0 bg-[#59644D]/40" />
+        <div className="absolute inset-0 bg-[#59644D]/50" />
       </div>
 
       <div className="relative z-10 flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mt-8">
