@@ -37,14 +37,14 @@ const LOGOS = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 px-6 md:px-16 bg-[#8F9A80]">
+    <section className="py-36 px-6 md:px-16 bg-[#8F9A80]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between lg:items-end gap-8 mb-16">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-white border border-white/30 rounded-full px-4 py-1.5 mb-6 inline-block">
+            <span className="text-xs font-bold uppercase tracking-wider text-white/80 border-2 border-white/50 rounded-full px-4 py-1.5 mb-6 inline-block">
               Our Services
             </span>
-            <h2 className="font-hero text-4xl md:text-6xl text-white max-w-2xl leading-tight">
+            <h2 className="font-hero text-4xl md:text-6xl text-white max-w-4xl leading-tight">
               What Vaultman House Offers Across The Supply Chain
             </h2>
           </div>
@@ -53,7 +53,7 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {SERVICES.map((item, i) => (
-            <div key={i} className="group relative h-[420px] rounded-4xl overflow-hidden cursor-pointer shadow-lg">
+            <div key={i} className="group relative h-105 rounded-4xl overflow-hidden cursor-pointer shadow-lg">
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-300 group-hover:opacity-80" />
               <Image
                 src={item.image}
