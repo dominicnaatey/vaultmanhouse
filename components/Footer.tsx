@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Mail, ArrowDown } from 'lucide-react';
+import { Mail, ArrowDown, MapPin } from 'lucide-react';
 
 const SOCIAL_LINKS = [
   { label: 'Instagram', href: 'https://www.instagram.com/vaultman.house/' },
@@ -18,7 +18,7 @@ const USEFUL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#2D2926] text-white pt-40 pb-10 px-6 md:px-16 overflow-hidden min-h-[700px] flex flex-col justify-between">
+    <footer className="relative bg-[#2D2926] text-white pt-40 pb-10 px-6 md:px-16 overflow-hidden min-h-175 flex flex-col justify-between">
       <div className="absolute inset-0 z-0 opacity-[0.15] mix-blend-overlay">
         <Image
           src="/images/soybeans.webp"
@@ -34,7 +34,7 @@ export default function Footer() {
         </h1>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full bg-[#3B3833]/80 backdrop-blur-xl rounded-4xl p-10 md:p-20 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
+      <div className="relative z-10 max-w-screen-2xl mx-auto w-full bg-[#3B3833]/80 backdrop-blur-xl rounded-4xl p-10 md:p-20 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
         {/* Contact */}
         <div className="flex flex-col gap-8 lg:w-1/3">
           <p className="text-base text-white/80 leading-relaxed font-medium">
@@ -47,9 +47,12 @@ export default function Footer() {
             <a href="tel:+233551495336" className="text-xl font-medium tracking-wide hover:text-[#F3E287] transition-colors inline-block w-max">
               +233 55 149 5336
             </a>
-            <p className="text-sm text-white/65 leading-relaxed max-w-sm mt-3">
-              No.7 Zeus Street, Otu Adzin Road Spintex - Kotobabi, Tema - Accra
-            </p>
+            <div className="flex items-start gap-2 max-w-sm mt-3 text-white/65">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+              <p className="text-sm font-normal leading-relaxed">
+                No.7 Zeus Street, Otu Adzin Road Spintex - Kotobabi, Tema - Accra
+              </p>
+            </div>
           </div>
           <div className="flex gap-3 mt-4 flex-wrap">
             {SOCIAL_LINKS.map((social) => (
@@ -67,7 +70,7 @@ export default function Footer() {
         </div>
 
         {/* Useful Links */}
-        <div className="lg:w-1/5">
+        <div className="lg:w-1/5 lg:border-l lg:border-white/15 lg:pl-10">
           <h4 className="font-hero text-xl mb-8 text-[#F3E287]">Useful Links</h4>
           <ul className="flex flex-col gap-4 text-sm font-medium text-white/80">
             {USEFUL_LINKS.map((link) => (
