@@ -66,7 +66,7 @@ export default function AccordionSection() {
               >
                 <button
                   type="button"
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                  onClick={() => setOpenIndex(index)}
                   className="flex w-full items-center justify-between gap-6 text-left cursor-pointer group"
                 >
                   <h3 className={`font-hero text-2xl transition-colors`}>
