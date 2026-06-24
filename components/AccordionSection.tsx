@@ -36,8 +36,8 @@ export default function AccordionSection() {
   const [openIndex, setOpenIndex] = React.useState(0);
 
   return (
-    <section className="flex flex-col lg:flex-row min-h-[650px]">
-      <div className="w-full lg:w-1/2 relative min-h-[400px]">
+    <section className="flex flex-col lg:flex-row min-h-162">
+      <div className="w-full lg:w-1/2 relative min-h-100">
         <Image
           src="/images/soybeans.webp"
           fill
