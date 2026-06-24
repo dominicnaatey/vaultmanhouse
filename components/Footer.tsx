@@ -69,43 +69,46 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Useful Links */}
-        <div className="lg:w-1/5 lg:border-l lg:border-white/15 lg:pl-15">
-          <h4 className="font-hero text-2xl mb-8 text-white">Useful Links</h4>
-          <ul className="flex flex-col gap-4 text-sm font-medium text-white/80">
-            {USEFUL_LINKS.map((link) => (
-              <li key={link.label}>
-                <a href={link.href} className="hover:text-[#F3E287] transition-colors inline-block">{link.label}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div className="lg:w-[55%] lg:border-l lg:border-white/15 lg:pl-15 flex flex-col justify-between gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-[minmax(0,0.7fr)_minmax(0,1fr)] gap-12">
+            {/* Useful Links */}
+            <div>
+              <h4 className="font-hero text-2xl mb-8 text-white">Useful Links</h4>
+              <ul className="flex flex-col gap-4 text-sm font-medium text-white/80">
+                {USEFUL_LINKS.map((link) => (
+                  <li key={link.label}>
+                    <a href={link.href} className="hover:text-[#F3E287] transition-colors inline-block">{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        {/* Subscribe */}
-        <div className="lg:w-1/3">
-          <h4 className="font-hero text-2xl mb-8 text-white">Subscribe</h4>
-          <form className="relative mb-6 group">
-            <input
-              type="email"
-              placeholder="Get news & updates"
-              className="w-full bg-transparent border-b-2 border-white/20 pb-4 text-sm font-medium outline-none placeholder-white/50 focus:border-[#F3E287] transition-colors"
-            />
-            <button type="submit" className="absolute right-2 top-0 text-white/50 group-focus-within:text-[#F3E287] hover:text-[#F3E287] transition-colors">
-              <Mail className="w-5 h-5" />
+            {/* Subscribe */}
+            <div>
+              <h4 className="font-hero text-2xl mb-8 text-white">Subscribe</h4>
+              <form className="relative mb-6 group">
+                <input
+                  type="email"
+                  placeholder="Get news & updates"
+                  className="w-full bg-transparent border-b-2 border-white/20 pb-4 text-sm font-medium outline-none placeholder-white/50 focus:border-[#F3E287] transition-colors"
+                />
+                <button type="submit" className="absolute right-2 top-0 text-white/50 group-focus-within:text-[#F3E287] hover:text-[#F3E287] transition-colors">
+                  <Mail className="w-5 h-5" />
+                </button>
+              </form>
+              <p className="text-xs text-white/50 leading-relaxed font-medium max-w-sm">
+                Sign up to receive updates on commodity trading, export opportunities, and agribusiness developments from Vaultman House.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-white/50">
+            <p>© 2025 Vaultman House. All Rights Reserved.</p>
+            <button className="bg-white/10 hover:bg-[#F3E287] hover:text-[#2D2926] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300">
+              <ArrowDown className="rotate-180 w-5 h-5" />
             </button>
-          </form>
-          <p className="text-xs text-white/50 leading-relaxed font-medium max-w-sm">
-            Sign up to receive updates on commodity trading, export opportunities, and agribusiness developments from Vaultman House.
-          </p>
+          </div>
         </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="relative z-10 w-full flex justify-between items-center max-w-7xl mx-auto text-[10px] font-bold uppercase tracking-widest text-white/50 px-4 md:px-8">
-        <p>© 2025 Vaultman House. All Rights Reserved.</p>
-        <button className="bg-white/10 hover:bg-[#F3E287] hover:text-[#2D2926] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300">
-          <ArrowDown className="rotate-180 w-5 h-5" />
-        </button>
       </div>
     </footer>
   );
