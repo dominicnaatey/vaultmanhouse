@@ -16,20 +16,17 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[#59644D]/50" />
       </div>
 
-      <div className="relative z-10 mt-8">
+      <div className="relative z-10 mt-8 flex flex-col items-start gap-8">
         <h1 className="font-serif font-bold text-6xl md:text-[78px] max-w-230 leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
+        <p className="text-lg md:text-xl max-w-xl font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+          The future rests on agribusiness and its supply chain network
+        </p>
       </div>
 
       <div className="relative z-10 mt-8 w-full max-w-md animate-in fade-in slide-in-from-right-8 duration-1000 delay-200 lg:absolute lg:top-1/2 lg:right-16 lg:mt-0 lg:-translate-y-1/2">
         <BookingForm />
-      </div>
-
-      <div className="relative z-10 flex flex-col items-start gap-8 mb-20 md:mb-0">
-        <p className="text-lg md:text-xl max-w-xl font-medium leading-relaxed opacity-90 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-          The future rests on agribusiness and its supply chain network
-        </p>
       </div>
 
       {/* <div className="relative z-20 mt-10 flex flex-col gap-6 lg:absolute lg:bottom-6 lg:left-6 lg:right-6 md:lg:left-16 lg:flex-row lg:justify-between lg:items-end pointer-events-none">
