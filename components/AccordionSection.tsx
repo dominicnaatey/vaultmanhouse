@@ -69,12 +69,12 @@ export default function AccordionSection() {
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                   className="flex w-full items-center justify-between gap-6 text-left cursor-pointer group"
                 >
-                  <h3 className={`font-hero text-2xl transition-colors ${isOpen ? 'text-[#F3E287]' : 'group-hover:text-[#F3E287]'}`}>
+                  <h3 className={`font-hero text-2xl transition-colors`}>
                     {item.title}
                   </h3>
-                  <div className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${isOpen ? 'border-[#F3E287]' : 'border-white/30 group-hover:border-[#F3E287]'}`}>
+                  <div className={` flex items-center justify-center transition-colors ${isOpen ? 'border-[#F3E287]' : 'border-white/30 group-hover:border-[#F3E287]'}`}>
                     <ArrowDown
-                      className={`w-4 h-4 transition-all duration-300 ${isOpen ? 'rotate-180 text-[#F3E287]' : 'group-hover:text-[#F3E287]'}`}
+                      className={`w-6 h-6 transition-all duration-300 ${isOpen ? 'rotate-180 text-[#F3E287]' : 'group-hover:text-[#F3E287]'}`}
                     />
                   </div>
                 </button>
