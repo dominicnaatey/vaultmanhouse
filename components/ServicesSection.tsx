@@ -9,21 +9,21 @@ const SERVICES = [
     title: 'Commodity Trading',
     description:
       'We export premium agricultural commodities including soybeans, corn, sesame seeds, and groundnuts with strict attention to international standards.',
-    image: '/images/soybeans.webp',
+    image: '/images/img01.webp',
   },
   {
     id: '02',
     title: 'Exportation',
     description:
       'We move agricultural materials into value-added export channels that support food, pharmaceutical, and animal feed industries.',
-    image: '/images/homehero.webp',
+    image: '/images/export.webp',
   },
   {
     id: '03',
     title: 'Processing',
     description:
       'We transform raw agricultural materials into semi-finished and finished goods such as cooking oil and flour to create more value locally.',
-    image: '/images/img01.webp',
+    image: '/images/processing02.webp',
   },
 ];
 
