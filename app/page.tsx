@@ -12,10 +12,10 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <FeaturesStrip />
+      {/* <FeaturesStrip /> */}
       <ServicesSection />
       <AccordionSection />
-      <AgriPartnerSection />
+      {/* <AgriPartnerSection /> */}
       <PortfolioSection />
       <BlogSection />
     </>
