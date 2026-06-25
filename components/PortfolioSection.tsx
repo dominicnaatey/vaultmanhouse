@@ -44,26 +44,26 @@ export default function PortfolioSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 md:gap-4">
           {COMMODITIES.map((item, i) => (
             <div key={i} className="group cursor-pointer">
-              <div className="relative h-[480px] rounded-4xl overflow-hidden mb-8 shadow-xl">
+              <div className="relative aspect-square rounded-4xl overflow-hidden mb-8 shadow-xl">
                 <Image
                   src={item.image}
                   fill
                   alt={item.title}
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent transition-colors duration-300 group-hover:from-black/75 group-hover:via-black/20 group-hover:to-black/10" />
               </div>
-              <div className="flex gap-2 mb-4">
+              {/* <div className="flex gap-2 mb-4">
                 {item.tags.map((tag) => (
                   <span key={tag} className="text-[10px] font-bold uppercase tracking-wider text-white/90 border border-white/50 rounded-full px-3 py-1 bg-white/5 backdrop-blur-sm">
                     {tag}
                   </span>
                 ))}
-              </div>
+              </div> */}
               <h3 className="font-hero text-3xl text-white group-hover:text-[#F3E287] transition-colors">
                 {item.title}
               </h3>
