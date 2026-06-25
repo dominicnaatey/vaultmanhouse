@@ -54,13 +54,13 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {SERVICES.map((item, i) => (
             <div key={i} className="group relative h-105 rounded-4xl overflow-hidden cursor-pointer shadow-lg">
-              <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80 via-black/25 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 z-10 h-0 bg-linear-to-t from-black/85 via-black/70 to-transparent opacity-0 transition-all duration-500 ease-out group-hover:h-full group-hover:opacity-100" />
+              <div className="absolute inset-0 z-10 bg-linear-to-t from-[#2B3521] via-[#2B3521]/25 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 z-10 h-0 bg-linear-to-t from-[#2B3521] via-[#2B3521]/70 to-transparent opacity-0 transition-all duration-500 ease-out group-hover:h-full group-hover:opacity-100" />
               <Image
                 src={item.image}
                 fill
                 alt={item.title}
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover transition-transform duration-700 group-hover:scale-103"
               />
               <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-3">
                 <span className="text-[#F3E287] text-sm font-mono tracking-widest">{item.id}</span>
