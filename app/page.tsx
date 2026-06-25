@@ -14,9 +14,9 @@ export default function Home() {
       <AboutSection />
       {/* <FeaturesStrip /> */}
       <ServicesSection />
+      <PortfolioSection />
       <AccordionSection />
       {/* <AgriPartnerSection /> */}
-      <PortfolioSection />
       <BlogSection />
     </>
   );
