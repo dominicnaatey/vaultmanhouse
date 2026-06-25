@@ -29,16 +29,16 @@ const COMMODITIES = [
   },
 ];
 
-export default function PortfolioSection() {
+export default function CommoditiesSection() {
   return (
-    <section id="commodities" className="py-32 px-6 md:px-16 bg-[#8F9A80]">
+    <section id="commodities" className="py-32 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-12 mb-20 relative">
-          <h2 className="font-hero text-5xl sm:text-6xl md:text-8xl text-white leading-[1.1] tracking-tight">
-            Featured<br /><span className="text-[#F3E287]">Commodities</span>
+          <h2 className="font-hero text-5xl sm:text-6xl md:text-8xl text-[#2D2926] leading-[1.1] tracking-tight">
+            Featured<br /><span className="text-[#8F9A80]">Commodities</span>
           </h2>
           <div className="lg:absolute lg:right-0 lg:top-8 max-w-sm">
-            <p className="text-white/90 text-base md:text-lg lg:text-right font-medium leading-relaxed">
+            <p className="text-[#2D2926] text-base md:text-lg lg:text-right font-medium leading-relaxed">
               Vaultman House trades dependable agricultural commodities across Ghana, Burkina Faso, and Mali with quality-focused sourcing and export readiness.
             </p>
           </div>
@@ -64,16 +64,16 @@ export default function PortfolioSection() {
                   </span>
                 ))}
               </div> */}
-              <h3 className="font-hero text-3xl text-white group-hover:text-[#F3E287] transition-colors">
+              <h3 className="font-hero font-normal text-xl text-[#2D2926] group-hover:text-[#F3E287] transition-colors">
                 {item.title}
               </h3>
             </div>
           ))}
         </div>
 
-        <div className="mt-20 flex justify-center">
+        {/* <div className="mt-20 flex justify-center">
           <Button>Contact Us</Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
