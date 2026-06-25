@@ -31,7 +31,7 @@ export default function AboutSection() {
           <p className="text-2xl lg:text-26px text-[#2D2926] font-medium leading-normal">
             Vaultman House Agro Commodities was founded in 2020 to build a diversified conglomerate across key African sectors, starting with large-scale agro-commodity trade in Ghana, Burkina Faso, and Mali.
           </p>
-          <p className="text-gray-600 text-sm md:text-lg leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-[17px] leading-relaxed">
             With a supply capacity of over 4,000MT+ of soybeans, we trade, produce, process, export, and transport agricultural commodities to give our clients maximum value. As we expand into processing and export, our goal is to create a sustainable agribusiness ecosystem driven by innovation, quality, transparency, and customer satisfaction.
           </p>
         </div>
