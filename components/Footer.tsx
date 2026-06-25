@@ -18,26 +18,30 @@ const USEFUL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#2D2926] text-white pt-40 pb-10 px-6 md:px-16 overflow-hidden min-h-175 flex flex-col justify-between">
-      <div className="absolute inset-0 z-0 opacity-[0.15] mix-blend-overlay">
+    <footer className="relative text-white bg-[#2e3521] pt-40 pb-2 px-6 md:px-16 overflow-hidden min-h-175 flex flex-col justify-between">
+      <div className="absolute inset-0 z-0 opacity-50 mix-blend-overlay">
         <Image
           src="/images/soybeans.webp"
           fill
           alt="Vaultman House background"
           className="object-cover"
         />
+        {/* <div className="absolute inset-0 bg-[#2B3521]/90 mix-blend-overlay" /> */}
       </div>
 
-      <div className="relative z-10 w-full mb-24 overflow-hidden flex justify-center -mt-10">
-        <h1 className="font-hero text-[18vw] leading-[0.7] text-[#F3E287] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
-          Vaultman
+      <div className="relative z-10 w-full mb-2 overflow-hidden flex justify-center -mt-10">
+        <h1 className="font-hero text-[11vw] leading-[0.7] text-[#FDF3C8] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
+          VaultmanHouse
         </h1>
+        {/* <h1 className="font-hero text-[15vw] leading-[0.7] text-[#F3E287] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
+          House
+        </h1> */}
       </div>
 
-      <div className="relative z-10 max-w-screen-2xl mx-auto w-full bg-[#3B3833]/80 backdrop-blur-xl rounded-4xl p-10 md:p-20 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
+      <div className="relative z-10 max-w-screen-2xl mx-auto w-full bg-white/20 backdrop-blur-3xl rounded-4xl p-10 md:p-25 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
         {/* Contact */}
-        <div className="flex flex-col gap-8 lg:w-1/3">
-          <p className="text-base text-white/80 leading-relaxed font-medium">
+        <div className="flex flex-col gap-8 lg:w-1/3 max-w-100">
+          <p className="text-xl text-white/80 leading-relaxed font-medium">
             The future rests on agribusiness and its supply chain network.
           </p>
           <div className="flex flex-col gap-2 text-[#F3E287]">
@@ -48,8 +52,8 @@ export default function Footer() {
               +233 55 149 5336
             </a>
             <div className="flex items-start gap-2 max-w-sm mt-3 text-white/85">
-              <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-              <p className="text-sm font-normal leading-relaxed">
+              {/* <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> */}
+              <p className="text-base font-normal leading-relaxed">
                 No.7 Zeus Street, Otu Adzin Road Spintex - Kotobabi, Tema - Accra
               </p>
             </div>
@@ -102,7 +106,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-xs font-medium uppercase tracking-widest text-white/50">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-sm font-light tracking-widest text-white/80">
             <p>© 2026 Vaultman House. All Rights Reserved.</p>
           </div>
         </div>
