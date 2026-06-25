@@ -67,7 +67,7 @@ export default function ServicesSection() {
                 <p className="max-h-0 overflow-hidden pr-2 text-sm leading-relaxed text-white/85 opacity-0 translate-y-2 transition-all duration-300 group-hover:max-h-28 group-hover:opacity-100 group-hover:translate-y-0">
                   {item.description}
                 </p>
-                <div className="w-10 h-10 rounded-full bg-[#F3E287] flex items-center justify-center mt-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                <div className="mt-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#F3E287] transition-transform duration-300 group-hover:translate-x-1">
                   <ArrowRight className="w-5 h-5 text-[#2D2926]" />
                 </div>
               </div>
