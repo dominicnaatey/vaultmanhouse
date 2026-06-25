@@ -22,17 +22,18 @@ export default function BookingForm() {
   const [appointmentDate, setAppointmentDate] = React.useState<Date | undefined>();
 
   return (
-    <div className="rounded-[2rem] bg-[#F9F7F2]/92 text-[#2D2926] backdrop-blur-xl border border-white/25 shadow-2xl p-6 md:p-8">
+    <div className="rounded-4xl bg-[#F9F7F2]/92 text-[#2D2926] backdrop-blur-xl border border-white/25 shadow-2xl p-6 md:p-8">
       <div className="mb-6">
         {/* <span className="inline-flex rounded-full border border-[#2D2926]/15 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#59644D]">
           Appointment
         </span> */}
         <h2 className="font-hero text-3xl md:text-4xl leading-tight mt-4 mb-3">
-          Book a Farm Visit
+          Book a Consultation
         </h2>
         <p className="text-sm text-[#2D2926]/70 leading-relaxed">
-          Reserve a quick consultation with our field team to discuss crops, soil
-          health, and tailored support.
+          {/* Schedule a quick conversation with Vaultman House to discuss commodity
+          sourcing, processing, export needs, and supply opportunities. */}
+          Book a Commodity Supply & Export Consultation
         </p>
       </div>
       <form className="grid grid-cols-1 gap-4">
