@@ -63,7 +63,7 @@ export default function ServicesSection() {
                 className="object-cover transition-transform duration-700 group-hover:scale-103"
               />
               <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-3">
-                <span className="text-[#F3E287] text-sm font-mono tracking-widest">{item.id}</span>
+                <span className="text-[#F3E287] text-base font-mono tracking-widest">{item.id}</span>
                 <h3 className="font-hero text-white text-3xl">{item.title}</h3>
                 <p className="max-h-0 overflow-hidden pr-2 text-sm font-normal leading-relaxed text-white/85 opacity-0 translate-y-2 transition-all duration-300 group-hover:max-h-28 group-hover:opacity-100 group-hover:translate-y-0">
                   {item.description}
