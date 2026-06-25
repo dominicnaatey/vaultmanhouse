@@ -12,7 +12,7 @@ export default function HeroSection() {
           className="object-cover scale-x-[1]"
           alt="Wheat field"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-[#2B3521] via-[#2B3521]/60 to-[#2B3521]/20" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#2B3521] via-[#2B3521]/60 to-[#2B3521]/40" />
       </div>
 
       <div className="relative z-10 mt-8 flex flex-col items-start gap-20 lg:absolute lg:top-1/2 lg:left-16 lg:mt-0 lg:-translate-y-1/2">
