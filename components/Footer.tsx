@@ -102,11 +102,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-white/50">
-            <p>© 2025 Vaultman House. All Rights Reserved.</p>
-            <button className="bg-white/10 hover:bg-[#F3E287] hover:text-[#2D2926] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300">
-              <ArrowDown className="rotate-180 w-5 h-5" />
-            </button>
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-xs font-medium uppercase tracking-widest text-white/50">
+            <p>© 2026 Vaultman House. All Rights Reserved.</p>
           </div>
         </div>
       </div>
