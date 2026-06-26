@@ -83,12 +83,12 @@ export default function Header() {
         <span>VerdaAgro</span>
       </div>
 
-      <nav className="font-ui capitalize hidden lg:flex items-center gap-8 text-sm">
+      <nav className="font-ui hidden lg:flex items-center gap-8 text-sm normal-case">
         {NAV_ITEMS.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="hover:text-[#8F9A80] transition-colors"
+            className="hover:text-[#8F9A80] transition-colors capitalize"
           >
             {item.label}
           </a>
