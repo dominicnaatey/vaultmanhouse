@@ -27,13 +27,13 @@ const SERVICES = [
   },
 ];
 
-const LOGOS = [
-  { icon: <Leaf />, text: 'Founded 2020' },
-  { icon: <Sprout />, text: '4,000MT+ Supply' },
-  { icon: <Users />, text: 'Ghana' },
-  { icon: <Users />, text: 'Burkina Faso' },
-  { icon: <Droplets />, text: 'Mali' },
-];
+// const LOGOS = [
+//   { icon: <Leaf />, text: 'Founded 2020' },
+//   { icon: <Sprout />, text: '4,000MT+ Supply' },
+//   { icon: <Users />, text: 'Ghana' },
+//   { icon: <Users />, text: 'Burkina Faso' },
+//   { icon: <Droplets />, text: 'Mali' },
+// ];
 
 export default function ServicesSection() {
   return (
@@ -76,14 +76,14 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-24 opacity-80 px-4">
+        {/* <div className="flex flex-wrap items-center justify-center gap-8 mt-24 opacity-80 px-4">
           {LOGOS.map((item, i) => (
             <div key={i} className="flex items-center gap-2 text-white font-serif text-xl tracking-wide hover:opacity-100 transition-opacity cursor-default">
               {React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'w-6 h-6 text-[#F3E287]' })}
               {item.text}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
