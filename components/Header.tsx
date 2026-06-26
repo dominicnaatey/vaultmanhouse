@@ -2,11 +2,17 @@
 
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, ShoppingBag, Search, ChevronRight, Menu } from 'lucide-react';
+import { Leaf, ShoppingBag, Search, Menu } from 'lucide-react';
 import Button from './ui/Button';
 
-const NAV_ITEMS = ['Home', 'Pages', 'Blog', 'Portfolio', 'Shop', 'Contacts'];
-const NO_CHEVRON = ['Portfolio', 'Shop', 'Contacts'];
+const NAV_ITEMS = [
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'Commodities', href: '#commodities' },
+  { label: 'About Us', href: '#about-us' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Contact Us', href: '#contact-us' },
+];
 
 export default function Header() {
   const [isHidden, setIsHidden] = React.useState(false);
@@ -80,14 +86,11 @@ export default function Header() {
       <nav className="font-ui hidden lg:flex items-center gap-8 text-sm">
         {NAV_ITEMS.map((item) => (
           <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className="flex items-center gap-1 hover:text-[#8F9A80] transition-colors relative group"
+            key={item.label}
+            href={item.href}
+            className="hover:text-[#8F9A80] transition-colors"
           >
-            {item}
-            {!NO_CHEVRON.includes(item) && (
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#8F9A80] transition-colors rotate-90" />
-            )}
+            {item.label}
           </a>
         ))}
       </nav>
