@@ -5,10 +5,10 @@ export default function AboutHero() {
   return (
     <>
       <section className="rounded-[2.5rem] bg-[#EBECE7] px-6 py-16 text-center md:px-12 md:py-20">
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#59644D]/15 bg-white/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-[#59644D]">
+        {/* <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#59644D]/15 bg-white/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-[#59644D]">
           <span className="h-2 w-2 rounded-full bg-[#D46A3A]" />
           Hi, We&apos;re Vaultman House
-        </span>
+        </span> */}
         <h1 className="mx-auto max-w-4xl font-hero text-4xl leading-tight md:text-6xl">
           Building a self-sustaining
           <span className="italic"> business ecosystem </span>
@@ -35,8 +35,8 @@ export default function AboutHero() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden rounded-[2rem]">
-        <div className="relative h-[340px] md:h-[560px]">
+      <section className="relative overflow-hidden rounded-4xl">
+        <div className="relative h-85 md:h-150">
           <Image
             src="/images/homehero.webp"
             alt="Vaultman House agribusiness operations"
