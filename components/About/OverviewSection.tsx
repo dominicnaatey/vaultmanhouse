@@ -1,21 +1,24 @@
 import { ABOUT_PRINCIPLES } from './about-data';
 
-export default function AboutOverviewSection() {
+export default function OverviewSection() {
   return (
     <section className="grid gap-8 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
       <div className="flex flex-col justify-center">
-        <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+        {/* <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+          Company Overview
+        </span> */}
+        <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#59644D]/80 border-2 border-[#59644D]/50 rounded-full px-4 py-1.5 w-max">
           Company Overview
         </span>
         <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-6xl">
           Built as a connected ecosystem, not just a single business
         </h2>
-        <p className="mt-6 max-w-xl text-sm leading-relaxed text-[#2D2926]/70 md:text-base">
+        <p className="mt-6 max-w-xl text-sm md:text-lg leading-relaxed text-[#2D2926]/70 ">
           Founded in 2020 after a careful study of economic patterns and trade
           data, Vaultman House was created as a self-serving and self-sustaining
           business ecosystem with expert control across critical sectors.
         </p>
-        <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#2D2926]/70 md:text-base">
+        <p className="mt-4 max-w-xl text-sm md:text-lg leading-relaxed text-[#2D2926]/70 ">
           Its branches are designed to work both independently and dependently
           toward one goal: building an organization capable of sustaining
           meaningful, comfortable, and high-quality human living.
