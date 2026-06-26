@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { label: 'About Us', href: '#about-us' },
   { label: 'Services', href: '#services' },
   { label: 'Commodities', href: '#commodities' },
-  { label: 'About Us', href: '#about-us' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contact Us', href: '#contact-us' },
 ];
@@ -84,10 +83,10 @@ export default function Header() {
         <span>VerdaAgro</span>
       </div>
 
-      <nav className="font-ui hidden lg:flex items-center gap-8 text-sm">
+      <nav className="font-ui capitalize hidden lg:flex items-center gap-8 text-sm">
         {NAV_ITEMS.map((item) => (
           <a
-            key={item.label}
+            key={item.href}
             href={item.href}
             className="hover:text-[#8F9A80] transition-colors"
           >
@@ -97,12 +96,12 @@ export default function Header() {
       </nav>
 
       <div className="flex items-center gap-4">
-        <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
+        {/* <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
           <ShoppingBag className="w-5 h-5" />
         </button>
         <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
           <Search className="w-5 h-5" />
-        </button>
+        </button> */}
         <Button className="hidden md:inline-flex">Get in Touch</Button>
         <button className="lg:hidden p-2 hover:bg-[#Eae7de] rounded-full transition-colors">
           <Menu className="w-6 h-6" />
