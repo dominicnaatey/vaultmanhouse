@@ -1,6 +1,6 @@
 import { ABOUT_IMPACT_AREAS } from './about-data';
 
-export default function AboutImpactSection() {
+export default function ImpactSection() {
   return (
     <section className="rounded-[2.5rem] bg-[#EBECE7] px-6 py-12 md:px-10 md:py-14">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -25,7 +25,7 @@ export default function AboutImpactSection() {
           {ABOUT_IMPACT_AREAS.map((item) => (
             <article
               key={item}
-              className="rounded-3xl border border-[#2D2926]/8 bg-white/75 px-5 py-4 text-sm text-[#2D2926]/75"
+              className="rounded-3xl border border-[#2D2926]/8 bg-[#8F9A80] px-5 py-4 text-sm text-white/90"
             >
               {item}
             </article>
