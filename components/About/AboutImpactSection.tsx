@@ -8,7 +8,7 @@ export default function AboutImpactSection() {
           <span className="mb-6 inline-flex text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
             Vision For Impact
           </span>
-          <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-5xl">
+          <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-4xl">
             Designed to make a wider economic impact beyond trade
           </h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#2D2926]/70 md:text-base">
@@ -18,11 +18,11 @@ export default function AboutImpactSection() {
           </p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 lg:self-center">
           {ABOUT_IMPACT_AREAS.map((item) => (
             <article
               key={item}
-              className="rounded-[1.5rem] border border-[#2D2926]/8 bg-white/75 px-5 py-4 text-sm text-[#2D2926]/75"
+              className="rounded-3xl border border-[#2D2926]/8 bg-white/75 px-5 py-4 text-sm text-[#2D2926]/75"
             >
               {item}
             </article>
