@@ -2,7 +2,7 @@ import { ABOUT_PRINCIPLES } from './about-data';
 
 export default function OverviewSection() {
   return (
-    <section className="grid gap-8 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 mb-36">
+    <section className="grid gap-8 lg:gap-14 pt-8 lg:grid-cols-[1.05fr_0.95fr] mb-36">
       <div className="flex flex-col justify-center">
         {/* <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
           Company Overview
