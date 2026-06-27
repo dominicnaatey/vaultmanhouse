@@ -5,7 +5,10 @@ export default function AboutImpactSection() {
     <section className="rounded-[2.5rem] bg-[#EBECE7] px-6 py-12 md:px-10 md:py-14">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
-          <span className="mb-6 inline-flex text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+          {/* <span className="mb-6 inline-flex text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+            Vision For Impact
+          </span> */}
+          <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
             Vision For Impact
           </span>
           <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-4xl">
