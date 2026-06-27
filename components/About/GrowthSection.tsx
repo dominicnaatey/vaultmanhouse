@@ -6,8 +6,8 @@ import { ABOUT_OPERATIONS } from './about-data';
 export default function AboutGrowthSection() {
   return (
     <section className="grid gap-8 pt-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
-      <div className="relative overflow-hidden rounded-[2rem] bg-white/70">
-        <div className="relative h-[420px]">
+      <div className="relative overflow-hidden rounded-4xl bg-white/70">
+        <div className="relative h-104">
           <Image
             src="/images/img03.webp"
             alt="Commodity storage and agricultural operations"
@@ -19,7 +19,10 @@ export default function AboutGrowthSection() {
       </div>
 
       <div className="flex flex-col justify-center">
-        <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+        {/* <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
+          How It Started
+        </span> */}
+        <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
           How It Started
         </span>
         <h2 className="max-w-2xl font-hero text-4xl leading-tight md:text-6xl">
