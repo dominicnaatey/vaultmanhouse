@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import AboutCtaSection from '@/components/About/AboutCtaSection';
-import AboutGrowthSection from '@/components/About/AboutGrowthSection';
+import GrowthSection from '@/components/About/GrowthSection';
 import AboutHero from '@/components/About/AboutHero';
 import AboutImpactSection from '@/components/About/AboutImpactSection';
 import OverviewSection from '@/components/About/OverviewSection';
@@ -18,7 +18,7 @@ export default function AboutPage() {
       <div className="mx-auto flex max-w-7xl flex-col py-8">
         <AboutHero />
         <OverviewSection />
-        <AboutGrowthSection />
+        <GrowthSection />
         <AboutImpactSection />
         <AboutStatsSection />
         <AboutCtaSection />
