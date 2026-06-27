@@ -9,7 +9,7 @@ export default function AboutHero() {
           <span className="h-2 w-2 rounded-full bg-[#D46A3A]" />
           Hi, We&apos;re Vaultman House
         </span> */}
-        <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#59644D]/80 border-2 border-[#59644D]/50 rounded-full px-4 py-1.5 w-max">
+        <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
           Hi, We&apos;re Vaultman House
         </span>
         <h1 className="mx-auto max-w-4xl font-hero text-4xl leading-tight md:text-6xl">
