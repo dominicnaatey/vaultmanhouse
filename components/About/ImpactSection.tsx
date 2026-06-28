@@ -2,7 +2,7 @@ import { ABOUT_IMPACT_AREAS } from './about-data';
 
 export default function ImpactSection() {
   return (
-    <section className="rounded-[2.5rem] bg-[#EBECE7] px-6 py-12 md:px-10 md:py-14">
+    <section className="rounded-[2.5rem] bg-[#EBECE7] px-6 py-12 md:px-10 md:py-14 mb-36">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           {/* <span className="mb-6 inline-flex text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
@@ -11,8 +11,8 @@ export default function ImpactSection() {
           <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
             Vision For Impact
           </span>
-          <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-4xl">
-            Designed to make a wider economic impact beyond trade
+          <h2 className="max-w-xl font-hero font-extrabold text-4xl leading-tight md:text-[40px]">
+            <span className="font-extrabold">Designed to make a wider economic impact beyond trade</span>
           </h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#2D2926]/70 md:text-base">
             The broader Vaultman House vision is to integrate vital sectors that
