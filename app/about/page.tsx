@@ -4,7 +4,7 @@ import GrowthSection from '@/components/About/GrowthSection';
 import AboutHero from '@/components/About/AboutHero';
 import ImpactSection from '@/components/About/ImpactSection';
 import OverviewSection from '@/components/About/OverviewSection';
-import AboutStatsSection from '@/components/About/AboutStatsSection';
+// import StatsSection from '@/components/About/StatsSection';
 
 export const metadata: Metadata = {
   title: 'About Us | Vaultman House',
@@ -20,7 +20,7 @@ export default function AboutPage() {
         <OverviewSection />
         <GrowthSection />
         <ImpactSection />
-        <AboutStatsSection />
+        {/* <StatsSection /> */}
         <AboutCtaSection />
       </div>
     </div>
