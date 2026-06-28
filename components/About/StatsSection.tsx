@@ -1,8 +1,8 @@
 import { ABOUT_STATS } from './about-data';
 
-export default function AboutStatsSection() {
+export default function StatsSection() {
   return (
-    <section className="grid gap-4 pt-6 sm:grid-cols-2 xl:grid-cols-4">
+    <section className="grid gap-4 pt-6 mb-36 sm:grid-cols-2 xl:grid-cols-4">
       {ABOUT_STATS.map((item) => (
         <article
           key={item.label}
