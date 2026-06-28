@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutCtaSection from '@/components/About/AboutCtaSection';
 import GrowthSection from '@/components/About/GrowthSection';
 import AboutHero from '@/components/About/AboutHero';
-import AboutImpactSection from '@/components/About/AboutImpactSection';
+import ImpactSection from '@/components/About/ImpactSection';
 import OverviewSection from '@/components/About/OverviewSection';
 import AboutStatsSection from '@/components/About/AboutStatsSection';
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <AboutHero />
         <OverviewSection />
         <GrowthSection />
-        <AboutImpactSection />
+        <ImpactSection />
         <AboutStatsSection />
         <AboutCtaSection />
       </div>
