@@ -25,7 +25,7 @@ export default function ImpactSection() {
           {ABOUT_IMPACT_AREAS.map((item) => (
             <article
               key={item}
-              className="rounded-3xl border border-[#2D2926]/8 bg-[#8F9A80] px-5 py-4 text-sm text-white/90"
+              className="rounded-3xl border border-[#2D2926]/8 bg-[#8F9A80]/50 px-5 py-4 text-sm text-black/90"
             >
               {item}
             </article>
