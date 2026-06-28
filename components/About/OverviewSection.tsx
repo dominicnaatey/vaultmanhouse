@@ -10,15 +10,15 @@ export default function OverviewSection() {
         <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
           Company Overview
         </span>
-        <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-5xl">
-          Built as a connected ecosystem, not just a single business
+        <h2 className="max-w-xl font-hero font-extrabold text-4xl leading-tight md:text-[50px]">
+          <span className="font-extrabold">Built as a connected ecosystem, not just a single business</span>
         </h2>
-        <p className="mt-6 max-w-xl text-sm md:text-lg leading-relaxed text-[#2D2926]/70 ">
+        <p className="mt-6 max-w-xl text-sm md:text-base leading-relaxed text-[#2D2926]/70 ">
           Founded in 2020 after a careful study of economic patterns and trade
           data, Vaultman House was created as a self-serving and self-sustaining
           business ecosystem with expert control across critical sectors.
         </p>
-        <p className="mt-4 max-w-xl text-sm md:text-lg leading-relaxed text-[#2D2926]/70 ">
+        <p className="mt-4 max-w-xl text-sm md:text-base leading-relaxed text-[#2D2926]/70 ">
           Its branches are designed to work both independently and dependently
           toward one goal: building an organization capable of sustaining
           meaningful, comfortable, and high-quality human living.
