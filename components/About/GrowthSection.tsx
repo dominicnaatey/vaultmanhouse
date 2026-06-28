@@ -14,7 +14,7 @@ export default function AboutGrowthSection() {
             How It Started
           </span>
           <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-5xl">
-            Agribusiness Was The First Sector Identified For Growth
+            Agribusiness was the first sector identified for growth
           </h2>
         </div>
 
