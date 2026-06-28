@@ -32,16 +32,16 @@ export default function AboutGrowthSection() {
         {ABOUT_OPERATIONS.map((item) => (
           <article
             key={item.title}
-            className="flex min-h-72 flex-col justify-between rounded-[1.75rem] border border-[#2D2926]/8 bg-[#8F9A80] p-8"
+            className="flex flex-col justify-between rounded-[1.75rem] border border-[#2D2926]/8 bg-[#8F9A80] p-8"
           >
             <div>
               <div className="mb-4 flex items-center gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E287] text-[#2D2926]">
                   <Factory className="h-5 w-5" />
                 </div>
-                <h3 className="font-hero text-2xl leading-tight text-white/90">{item.title}</h3>
+                <h3 className="font-hero text-2xl leading-tight text-white">{item.title}</h3>
               </div>
-              <p className="mt-4 text-sm font-light leading-relaxed text-white/80">
+              <p className="mt-4 text-sm font-normal leading-relaxed text-white">
                 {item.description}
               </p>
             </div>
