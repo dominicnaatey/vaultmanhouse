@@ -38,9 +38,9 @@ export default function OverviewSection() {
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E287] text-[#2D2926]">
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="font-hero text-2xl leading-tight text-white/90">{item.title}</h3>
+                <h3 className="font-hero text-2xl leading-tight text-white">{item.title}</h3>
               </div>
-              <p className="mt-3 max-w-md text-sm font-light leading-relaxed text-white/80">
+              <p className="mt-3 max-w-md text-sm font-normal leading-relaxed text-white">
                 {item.description}
               </p>
             </article>
