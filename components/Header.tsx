@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, ShoppingBag, Search, Menu } from 'lucide-react';
+import Image from 'next/image';
+import { Menu } from 'lucide-react';
 import Button from './ui/Button';
 
 const NAV_ITEMS = [
@@ -78,9 +79,14 @@ export default function Header() {
           : 'bg-[#F9F7F2]/95 border-b border-[#2D2926]/10 shadow-sm'
       }`}
     >
-      <div className="flex items-center gap-2 font-serif text-2xl font-bold cursor-pointer transition-transform hover:scale-105">
-        <Leaf className="w-8 h-8 text-[#41533B]" />
-        <span>VerdaAgro</span>
+      <div className="relative h-10 w-38 cursor-pointer transition-transform hover:scale-105">
+        <Image
+          src="/vault-logo-yellow-3.svg"
+          alt="Vaultman House logo"
+          fill
+          className="object-contain object-left"
+          priority
+        />
       </div>
 
       <nav className="font-ui hidden lg:flex items-center gap-8 text-sm normal-case">
