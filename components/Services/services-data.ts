@@ -9,7 +9,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Commodity Trading',
     description:
       'Our commodity trading service focuses on exporting premium agricultural products including soybeans, corn, sesame seeds, and groundnuts, with strict compliance to international standards and growing demand for raw outputs.',
-    image: '/images/field.webp',
+    image: '/images/img01.webp',
   },
   {
     title: 'Exportation',
