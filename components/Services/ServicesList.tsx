@@ -3,7 +3,7 @@ import { SERVICES } from './services-data';
 
 export default function ServicesList() {
   return (
-    <section className="mt-20 md:mt-36 space-y-18 md:space-y-24">
+    <section className="mt-20 md:mt-36 space-y-18 md:space-y-36">
       {SERVICES.map((service, index) => (
         <ServiceRow
           key={service.title}
