@@ -18,10 +18,10 @@ const USEFUL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="relative text-white bg-[#2e3521] pt-40 pb-2 px-6 md:px-16 overflow-hidden min-h-175 flex flex-col justify-between">
+    <footer className="relative text-white bg-[#2D2926] pt-40 pb-2 px-6 md:px-16 overflow-hidden min-h-175 flex flex-col justify-between">
       <div className="absolute inset-0 z-0 opacity-50 mix-blend-overlay">
         <Image
-          src="/images/soybeans.webp"
+          src="/images/peanuts.webp"
           fill
           alt="Vaultman House background"
           className="object-cover"
@@ -30,7 +30,7 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 w-full mb-2 overflow-hidden flex justify-center -mt-10">
-        <h1 className="font-hero text-[11vw] leading-[0.7] text-[#FDF3C8] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
+        <h1 className="font-hero text-[11vw] leading-[0.7] text-white text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
           VaultmanHouse
         </h1>
         {/* <h1 className="font-hero text-[15vw] leading-[0.7] text-[#F3E287] text-center drop-shadow-2xl scale-y-110 tracking-tighter opacity-90">
@@ -38,7 +38,7 @@ export default function Footer() {
         </h1> */}
       </div>
 
-      <div className="relative z-10 max-w-screen-2xl mx-auto w-full bg-white/20 backdrop-blur-3xl rounded-4xl p-10 md:p-25 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
+      <div className="relative z-10 max-w-screen-2xl mx-auto w-full bg-white/5 backdrop-blur-xl rounded-4xl p-10 md:p-20 flex flex-col lg:flex-row justify-between gap-16 border border-white/10 shadow-2xl mb-12">
         {/* Contact */}
         <div className="flex flex-col gap-8 lg:w-1/3 max-w-100">
           <p className="text-xl text-white/80 leading-relaxed font-medium">
