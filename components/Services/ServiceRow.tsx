@@ -14,7 +14,7 @@ export default function ServiceRow({
   isTextFirst,
 }: ServiceRowProps) {
   return (
-    <article className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+    <article className="group grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
       <div className={isTextFirst ? 'order-1' : 'order-2'}>
         <div className="max-w-md">
           <h2 className="font-hero text-3xl leading-tight md:text-4xl">
@@ -40,7 +40,7 @@ export default function ServiceRow({
               src={service.image}
               alt={service.title}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-103"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
