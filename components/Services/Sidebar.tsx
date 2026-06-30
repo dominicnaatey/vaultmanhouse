@@ -9,12 +9,12 @@ const DETAIL_LINKS = [
   { label: 'Processing', href: '/services' },
 ];
 
-export default function ServiceDetailSidebar() {
+export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden lg:fixed lg:left-5 lg:top-28 lg:block lg:w-42]">
-      <nav className="flex flex-col gap-4 pt-6">
+    <aside className="hidden lg:fixed lg:left-5 lg:top-28 lg:block lg:w-42">
+      <nav className="flex flex-col gap-6 pt-6">
         {DETAIL_LINKS.map((item) => {
           const isActive = pathname === item.href;
 
@@ -22,7 +22,7 @@ export default function ServiceDetailSidebar() {
             <Link
               key={item.label}
               href={item.href}
-              className={`text-xs font-bold uppercase tracking-wider transition-colors ${
+              className={`text-xs font-normal uppercase tracking-wider transition-colors ${
                 isActive ? 'text-[#2D2926]' : 'text-[#2D2926]/45 hover:text-[#2D2926]/75'
               }`}
             >

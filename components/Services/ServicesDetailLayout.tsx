@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { usePathname } from 'next/navigation';
 
-import ServiceDetailSidebar from './ServiceDetailSidebar';
+import ServiceDetailSidebar from './Sidebar';
 
 type ServicesDetailLayoutProps = {
   children: React.ReactNode;
