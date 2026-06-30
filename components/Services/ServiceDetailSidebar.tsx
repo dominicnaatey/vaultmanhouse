@@ -13,7 +13,7 @@ export default function ServiceDetailSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden lg:block">
+    <aside className="hidden lg:block lg:-ml-12 xl:-ml-20 2xl:-ml-24">
       <nav className="sticky top-28 flex flex-col gap-4 pt-6">
         {DETAIL_LINKS.map((item) => {
           const isActive = pathname === item.href;
