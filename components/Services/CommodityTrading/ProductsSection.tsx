@@ -4,7 +4,7 @@ import { PRODUCTS } from './Data';
 
 export default function ProductsSection() {
   return (
-    <section className="mt-16">
+    <section className="mt-24 max-w-4xl mx-auto">
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
         Our Agro Commodity Trading Products
       </h2>
@@ -16,7 +16,7 @@ export default function ProductsSection() {
         {PRODUCTS.map((product) => (
           <article key={product.name}>
             <div className="relative overflow-hidden rounded-[1.25rem] shadow-[0_12px_30px_rgba(45,41,38,0.06)]">
-              <div className="relative aspect-square">
+              <div className="relative aspect-5/4">
                 <Image
                   src={product.image}
                   alt={product.name}
