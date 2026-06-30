@@ -1,7 +1,7 @@
 export default function Closing() {
   return (
-    <section className="mt-14 max-w-3xl">
-      <p className="text-sm leading-relaxed text-[#2D2926]/75 md:text-base">
+    <section className="mt-24 max-w-4xl mx-auto">
+      <p className="text-sm font-normal leading-relaxed text-[#2D2926]/75 md:text-base">
         Agro commodity trading is a vital component of the global food system,
         connecting farmers, suppliers, and buyers across the world. At Vaultman
         House Agro Commodities, we specialize in agro commodity trading,
