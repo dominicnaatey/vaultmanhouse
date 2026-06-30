@@ -1,6 +1,6 @@
-import { TRADING_SERVICES } from './commodity-trading-data';
+import { TRADING_SERVICES } from './Data';
 
-export default function CommodityTradingServicesSection() {
+export default function ServicesSection() {
   return (
     <section className="mt-14">
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
@@ -15,7 +15,7 @@ export default function CommodityTradingServicesSection() {
         {TRADING_SERVICES.map((item) => (
           <article
             key={item.id}
-            className="rounded-[1.5rem] bg-[#8F9A80] p-6 text-white"
+            className="rounded-3xl bg-[#8F9A80] p-6 text-white"
           >
             <div className="mb-4 flex items-center gap-3">
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F3E287] text-[10px] font-bold text-[#2D2926]">

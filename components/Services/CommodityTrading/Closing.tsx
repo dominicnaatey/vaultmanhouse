@@ -1,4 +1,4 @@
-export default function CommodityTradingClosing() {
+export default function Closing() {
   return (
     <section className="mt-14 max-w-3xl">
       <p className="text-sm leading-relaxed text-[#2D2926]/75 md:text-base">

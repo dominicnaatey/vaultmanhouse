@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import CommodityTradingClosing from '@/components/Services/CommodityTrading/CommodityTradingClosing';
-import CommodityTradingFeatureImage from '@/components/Services/CommodityTrading/CommodityTradingFeatureImage';
-import CommodityTradingHero from '@/components/Services/CommodityTrading/CommodityTradingHero';
-import CommodityTradingProductsSection from '@/components/Services/CommodityTrading/CommodityTradingProductsSection';
-import CommodityTradingServicesSection from '@/components/Services/CommodityTrading/CommodityTradingServicesSection';
+import Closing from '@/components/Services/CommodityTrading/Closing';
+import FeatureImage from '@/components/Services/CommodityTrading/FeatureImage';
+import Hero from '@/components/Services/CommodityTrading/Hero';
+import ProductsSection from '@/components/Services/CommodityTrading/ProductsSection';
+import ServicesSection from '@/components/Services/CommodityTrading/ServicesSection';
 
 export const metadata: Metadata = {
   title: 'Commodity Trading | Vaultman House',
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 export default function CommodityTradingPage() {
   return (
     <>
-      <CommodityTradingHero />
-      <CommodityTradingFeatureImage />
-      <CommodityTradingServicesSection />
-      <CommodityTradingProductsSection />
-      <CommodityTradingClosing />
+      <Hero />
+      <FeatureImage />
+      <ServicesSection />
+      <ProductsSection />
+      <Closing />
     </>
   );
 }

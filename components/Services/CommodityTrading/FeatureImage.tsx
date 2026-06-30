@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function CommodityTradingFeatureImage() {
+export default function FeatureImage() {
   return (
     <section className="mt-12">
       <div className="relative overflow-hidden rounded-[2rem] shadow-[0_16px_40px_rgba(45,41,38,0.08)]">

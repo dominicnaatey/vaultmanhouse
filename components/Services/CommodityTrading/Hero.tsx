@@ -1,4 +1,4 @@
-export default function CommodityTradingHero() {
+export default function Hero() {
   return (
     <section>
       <h1 className="font-hero text-4xl leading-tight md:text-5xl">

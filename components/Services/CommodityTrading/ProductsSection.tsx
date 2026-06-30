@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import { PRODUCTS } from './commodity-trading-data';
+import { PRODUCTS } from './Data';
 
-export default function CommodityTradingProductsSection() {
+export default function ProductsSection() {
   return (
     <section className="mt-16">
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
