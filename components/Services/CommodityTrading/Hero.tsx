@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-    <section>
+    <section className="max-w-4xl mx-auto flex flex-col">
       <h1 className="font-hero text-4xl leading-tight md:text-5xl">
         Commodity Trading
       </h1>
-      <h2 className="mt-6 font-hero text-2xl leading-tight md:text-3xl">
+      <h2 className="mt-6 font-hero text-2xl leading-tight md:text-2xl">
         Agro commodity trading; connecting farmers, suppliers, and buyers
       </h2>
       <p className="mt-6 max-w-3xl text-sm md:text-base font-normal leading-relaxed text-[#2D2926]/70">
