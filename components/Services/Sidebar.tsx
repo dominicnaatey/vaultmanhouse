@@ -13,7 +13,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden lg:block lg:w-[170px]">
+    <aside className="hidden lg:block lg:w-42">
       <nav className="sticky top-28 flex flex-col gap-6 pt-6">
         {DETAIL_LINKS.map((item) => {
           const isActive = pathname === item.href;
