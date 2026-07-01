@@ -2,7 +2,7 @@ import { TRADING_SERVICES } from './Data';
 
 export default function ServicesSection() {
   return (
-    <section className="mt-14 max-w-4xl mx-auto">
+    <section className="mt-24 max-w-4xl mx-auto">
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
         Our Agro-Commodity Trading Services
       </h2>
