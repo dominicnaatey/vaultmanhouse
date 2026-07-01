@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 const DETAIL_LINKS = [
   { label: 'Commodity Trading', href: '/services/commodity-trading' },
   { label: 'Exportation', href: '/services/exportation' },
-  { label: 'Processing', href: '/services' },
+  { label: 'Processing', href: '/services/processing' },
 ];
 
 export default function Sidebar() {
