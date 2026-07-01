@@ -40,19 +40,19 @@ export default function Header() {
     <motion.header
       initial={false}
       animate={{
-        height: isCompact ? 64 : 80,
+        height: isCompact ? 60 : 68,
       }}
       transition={{
         duration: 0.35,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className={`sticky top-0 z-50 flex items-center justify-between overflow-hidden px-6 will-change-transform ${
+      className={`sticky top-0 z-50 flex items-center justify-between overflow-hidden px-16 will-change-transform ${
         isAtTop
           ? 'bg-[#F9F7F2]'
           : 'bg-[#F9F7F2]/75 backdrop-blur-md border-b border-[#2D2926]/10'
       }`}
     >
-      <div className="relative h-10 w-38 cursor-pointer transition-transform hover:scale-105">
+      <div className="relative h-8 w-30 cursor-pointer">
         <Image
           src="/vault-logo-yellow-3.svg"
           alt="Vaultman House logo"
@@ -62,12 +62,12 @@ export default function Header() {
         />
       </div>
 
-      <nav className="font-ui hidden lg:flex items-center gap-8 text-sm normal-case">
+      <nav className="font-ui hidden lg:flex items-center gap-8 text-xs  normal-case">
         {NAV_ITEMS.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="hover:text-[#8F9A80] transition-colors capitalize"
+            className="hover:text-[#8F9A80] font-light transition-colors uppercase"
           >
             {item.label}
           </a>
@@ -81,7 +81,7 @@ export default function Header() {
         <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
           <Search className="w-5 h-5" />
         </button> */}
-        <Button className="hidden md:inline-flex">Get in Touch</Button>
+        <Button className="hidden text-xs md:inline-flex">Get in Touch</Button>
         <button className="lg:hidden p-2 hover:bg-[#Eae7de] rounded-full transition-colors">
           <Menu className="w-6 h-6" />
         </button>
