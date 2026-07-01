@@ -10,8 +10,8 @@ export default function MealSection() {
         aquaculture applications.
       </p>
 
-      <div className="mt-8 rounded-[1.75rem] border border-[#2D2926]/8 bg-white p-8 shadow-[0_12px_30px_rgba(45,41,38,0.05)]">
-        <p className="text-sm leading-relaxed text-[#2D2926]/75 md:text-base">
+      <div className="mt-8 rounded-[1.75rem] border border-[#2D2926]/8 bg-[#806F63] p-8 shadow-[0_12px_30px_rgba(45,41,38,0.05)]">
+        <p className="text-sm font-normal leading-relaxed text-white/90 md:text-base">
           The process begins with dehulling to remove the outer shell, which
           helps increase protein content and reduce fiber. The dehulled soybeans
           are then crushed, extracted, toasted, and pelleted into a convenient,
