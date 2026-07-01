@@ -6,6 +6,7 @@ import FeatureImage from '@/components/Services/Processing/FeatureImage';
 import Hero from '@/components/Services/Processing/Hero';
 import MealSection from '@/components/Services/Processing/MealSection';
 import OilProductionSection from '@/components/Services/Processing/OilProductionSection';
+import SecondaryImage from '@/components/Services/Processing/SecondaryImage';
 
 export const metadata: Metadata = {
   title: 'Processing | Vaultman House',
@@ -20,6 +21,7 @@ export default function ProcessingPage() {
       <FeatureImage />
       <OilProductionSection />
       <MealSection />
+      <SecondaryImage />
       <FacilitySection />
       <Closing />
     </>
