@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const DETAIL_LINKS = [
   { label: 'Commodity Trading', href: '/services/commodity-trading' },
-  { label: 'Exportation', href: '/services' },
+  { label: 'Exportation', href: '/services/exportation' },
   { label: 'Processing', href: '/services' },
 ];
 
@@ -13,8 +13,8 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden lg:fixed lg:left-5 lg:top-28 lg:block lg:w-42">
-      <nav className="flex flex-col gap-6 pt-6">
+    <aside className="hidden lg:block lg:w-[170px]">
+      <nav className="sticky top-28 flex flex-col gap-6 pt-6">
         {DETAIL_LINKS.map((item) => {
           const isActive = pathname === item.href;
 
