@@ -12,7 +12,7 @@ export default function ProductsSection() {
         At Vaultman House Agro Commodities, we trade a range of agro-commodities.
       </p>
 
-      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3">
         {PRODUCTS.map((product) => (
           <article key={product.name}>
             <div className="relative overflow-hidden rounded-[1.25rem] shadow-[0_12px_30px_rgba(45,41,38,0.06)]">
