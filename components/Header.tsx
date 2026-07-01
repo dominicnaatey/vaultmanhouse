@@ -16,49 +16,22 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
-  const [isHidden, setIsHidden] = React.useState(false);
   const [isAtTop, setIsAtTop] = React.useState(true);
+  const [isCompact, setIsCompact] = React.useState(false);
 
   React.useEffect(() => {
-    let lastScrollY = window.scrollY;
-    let hideTimeout: ReturnType<typeof setTimeout> | undefined;
-
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const isNearTop = currentScrollY <= 10;
 
       setIsAtTop(isNearTop);
-
-      if (isNearTop) {
-        if (hideTimeout) {
-          clearTimeout(hideTimeout);
-        }
-        setIsHidden(false);
-      } else if (currentScrollY > lastScrollY + 4) {
-        if (hideTimeout) {
-          clearTimeout(hideTimeout);
-        }
-
-        hideTimeout = setTimeout(() => {
-          setIsHidden(true);
-        }, 140);
-      } else if (currentScrollY < lastScrollY - 4) {
-        if (hideTimeout) {
-          clearTimeout(hideTimeout);
-        }
-        setIsHidden(false);
-      }
-
-      lastScrollY = currentScrollY;
+      setIsCompact(!isNearTop);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
     return () => {
-      if (hideTimeout) {
-        clearTimeout(hideTimeout);
-      }
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -67,16 +40,16 @@ export default function Header() {
     <motion.header
       initial={false}
       animate={{
-        y: isHidden ? '-100%' : '0%',
+        height: isCompact ? 64 : 80,
       }}
       transition={{
-        duration: isHidden ? 0.35 : 0.45,
+        duration: 0.35,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className={`sticky top-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-md will-change-transform ${
+      className={`sticky top-0 z-50 flex items-center justify-between overflow-hidden px-6 will-change-transform ${
         isAtTop
-          ? 'bg-[#F9F7F2]/90 border-b border-[#2D2926]/5'
-          : 'bg-[#F9F7F2]/95 border-b border-[#2D2926]/10 shadow-sm'
+          ? 'bg-[#F9F7F2]'
+          : 'bg-[#F9F7F2]/75 backdrop-blur-md border-b border-[#2D2926]/10'
       }`}
     >
       <div className="relative h-10 w-38 cursor-pointer transition-transform hover:scale-105">
