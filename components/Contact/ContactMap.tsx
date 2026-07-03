@@ -207,7 +207,7 @@ export default function ContactMap() {
         </>
       ) : null}
 
-      <div className="relative overflow-hidden rounded-4xl border border-[#2D2926]/8 bg-white shadow-[0_16px_45px_rgba(45,41,38,0.06)]">
+      <div className="relative overflow-hidden rounded-4xl border-2 border-[#2D2926]/88 bg-white shadow-[0_16px_45px_rgba(45,41,38,0.06)]">
         {showFallbackState ? (
           <div className="flex h-75 flex-col justify-center bg-[#F0ECE2] px-8 text-[#2D2926] md:h-95 md:px-12">
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#59644D]">
