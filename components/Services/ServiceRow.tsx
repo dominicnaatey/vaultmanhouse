@@ -24,7 +24,7 @@ export default function ServiceRow({
             {service.description}
           </p>
           <Link
-            href="/#contact-us"
+            href={service.link}
             className="font-ui mt-6 inline-flex items-center gap-2 rounded-full bg-[#F3E287] px-5 py-2.5 text-xs text-[#2D2926] transition-colors hover:bg-[#E5D474]"
           >
             Explore Service
