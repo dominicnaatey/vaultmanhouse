@@ -1,13 +1,17 @@
 import ContactDetails from './ContactDetails';
 import ContactForm from './ContactForm';
+import ContactMap from './ContactMap';
 
 export default function ContactSection() {
   return (
-    <section className="mt-16 md:mt-20">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch">
-        <ContactDetails />
-        <ContactForm />
-      </div>
-    </section>
+    <>
+      <section>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,0.9fr)] lg:items-start lg:gap-16">
+          <ContactDetails />
+          <ContactForm />
+        </div>
+      </section>
+      <ContactMap />
+    </>
   );
 }
