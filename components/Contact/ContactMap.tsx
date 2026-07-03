@@ -98,6 +98,7 @@ const VAULTMAN_HOUSE_LOCATION: HereCoordinate = {
   lat: 5.6393125,
   lng: -0.0931875,
 };
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${VAULTMAN_HOUSE_LOCATION.lat},${VAULTMAN_HOUSE_LOCATION.lng}`;
 
 export default function ContactMap() {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -207,7 +208,15 @@ export default function ContactMap() {
         </>
       ) : null}
 
-      <div className="relative overflow-hidden rounded-4xl border-2 border-[#2D2926]/88 bg-white shadow-[0_16px_45px_rgba(45,41,38,0.06)]">
+      <div className="relative overflow-hidden rounded-4xl border-2 border-[#8F9A80]/50 bg-white shadow-[0_16px_45px_rgba(45,41,38,0.06)]">
+        <a
+          href={GOOGLE_MAPS_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="absolute right-5 top-5 z-20 inline-flex items-center rounded-full border border-[#8F9A80]/50 bg-white/95 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#2D2926] shadow-[0_10px_24px_rgba(45,41,38,0.12)] transition-colors hover:border-[#59644D]/50 hover:text-[#59644D]"
+        >
+          Open Google Maps
+        </a>
         {showFallbackState ? (
           <div className="flex h-75 flex-col justify-center bg-[#F0ECE2] px-8 text-[#2D2926] md:h-95 md:px-12">
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#59644D]">
