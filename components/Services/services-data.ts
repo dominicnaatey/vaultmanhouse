@@ -2,6 +2,7 @@ export type ServiceItem = {
   title: string;
   description: string;
   image: string;
+  link: string;
 };
 
 export const SERVICES: ServiceItem[] = [
@@ -10,17 +11,20 @@ export const SERVICES: ServiceItem[] = [
     description:
       'Our commodity trading service focuses on exporting premium agricultural products including soybeans, corn, sesame seeds, and groundnuts, with strict compliance to international standards and growing demand for raw outputs.',
     image: '/images/img01.webp',
+    link: '/services/commodity-trading',
   },
   {
     title: 'Exportation',
     description:
       'We move agricultural materials into value-added export channels that support food, pharmaceutical, and animal feed industries.',
     image: '/images/export.webp',
+    link: '/services/exportation',
   },
   {
     title: 'Processing',
     description:
       "Vaultman House transforms raw agricultural materials into food, drugs, and animal feed, boosting Ghana's GDP while producing semi-finished and finished goods like cooking oil and flour.",
     image: '/images/processing02.webp',
+    link: '/services/processing',
   },
 ];
