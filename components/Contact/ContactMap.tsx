@@ -8,6 +8,16 @@ type HereCoordinate = {
   lng: number;
 };
 
+type HerePoint = {
+  x: number;
+  y: number;
+};
+
+type HereSize = {
+  w: number;
+  h: number;
+};
+
 type HereViewPort = {
   resize: () => void;
 };
@@ -44,7 +54,19 @@ type HereGlobal = {
     }
   ) => HereMapInstance;
   map: {
-    Marker: new (coords: HereCoordinate) => unknown;
+    Icon: new (
+      bitmap: string,
+      options?: {
+        size?: HereSize;
+        anchor?: HerePoint;
+      }
+    ) => unknown;
+    Marker: new (
+      coords: HereCoordinate,
+      options?: {
+        icon?: unknown;
+      }
+    ) => unknown;
   };
   mapevents: {
     MapEvents: new (map: HereMapInstance) => unknown;
@@ -64,9 +86,10 @@ declare global {
 }
 
 const HERE_MAPS_API_KEY = process.env.NEXT_PUBLIC_HERE_MAPS_API_KEY;
+const MAP_PIN_PATH = '/MaPin.svg';
 const VAULTMAN_HOUSE_LOCATION: HereCoordinate = {
-  lat: 5.6698,
-  lng: -0.0166,
+  lat: 5.6393125,
+  lng: -0.0931875,
 };
 
 export default function ContactMap() {
@@ -95,8 +118,12 @@ export default function ContactMap() {
       zoom: 15,
       pixelRatio: window.devicePixelRatio || 1,
     });
+    const mapPinIcon = new H.map.Icon(MAP_PIN_PATH, {
+      size: { w: 35, h: 45 },
+      anchor: { x: 25, y: 65 },
+    });
 
-    map.addObject(new H.map.Marker(VAULTMAN_HOUSE_LOCATION));
+    map.addObject(new H.map.Marker(VAULTMAN_HOUSE_LOCATION, { icon: mapPinIcon }));
     new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     H.ui.UI.createDefault(map, defaultLayers);
 
