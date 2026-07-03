@@ -4,7 +4,7 @@ import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactForm() {
   return (
-    <div className="rounded-[2rem] bg-[#ECEBEA] p-8 shadow-[0_18px_50px_rgba(45,41,38,0.08)] md:p-10 lg:p-12">
+    <div className="rounded-4xl bg-white p-8 shadow-[0_18px_50px_rgba(45,41,38,0.08)] md:p-10 lg:p-12">
       <div className="max-w-md">
         <h2 className="font-hero text-3xl leading-tight text-[#2D2926] md:text-[2.5rem]">
           Get in Touch
