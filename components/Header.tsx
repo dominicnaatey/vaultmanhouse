@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { label: 'Services', href: '/services' },
   { label: 'Commodities', href: '#commodities' },
   { label: 'Blog', href: '#blog' },
-  { label: 'Contact Us', href: '#contact-us' },
+  { label: 'Contact Us', href: '/contact' },
 ];
 
 export default function Header() {
