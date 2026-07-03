@@ -61,6 +61,13 @@ type HereGlobal = {
         anchor?: HerePoint;
       }
     ) => unknown;
+    DomIcon: new (element: HTMLElement) => unknown;
+    DomMarker: new (
+      coords: HereCoordinate,
+      options?: {
+        icon?: unknown;
+      }
+    ) => unknown;
     Marker: new (
       coords: HereCoordinate,
       options?: {
@@ -118,12 +125,42 @@ export default function ContactMap() {
       zoom: 15,
       pixelRatio: window.devicePixelRatio || 1,
     });
-    const mapPinIcon = new H.map.Icon(MAP_PIN_PATH, {
-      size: { w: 35, h: 45 },
-      anchor: { x: 25, y: 65 },
-    });
+    const markerElement = document.createElement('div');
+    markerElement.style.display = 'flex';
+    markerElement.style.flexDirection = 'column';
+    markerElement.style.alignItems = 'center';
+    markerElement.style.transform = 'translate(-50%, -100%)';
+    markerElement.style.whiteSpace = 'nowrap';
+    markerElement.style.pointerEvents = 'none';
 
-    map.addObject(new H.map.Marker(VAULTMAN_HOUSE_LOCATION, { icon: mapPinIcon }));
+    const labelElement = document.createElement('div');
+    labelElement.textContent = 'Vaultman House';
+    labelElement.style.marginBottom = '8px';
+    labelElement.style.borderRadius = '999px';
+    labelElement.style.backgroundColor = '#FFFFFF';
+    labelElement.style.padding = '6px 12px';
+    labelElement.style.boxShadow = '0 10px 24px rgba(45, 41, 38, 0.14)';
+    labelElement.style.fontFamily = 'Inter, sans-serif';
+    labelElement.style.fontSize = '13px';
+    labelElement.style.fontWeight = '600';
+    labelElement.style.lineHeight = '1';
+    labelElement.style.color = '#2D2926';
+
+    const pinElement = document.createElement('img');
+    pinElement.src = MAP_PIN_PATH;
+    pinElement.alt = 'Vaultman House marker';
+    pinElement.width = 35;
+    pinElement.height = 45;
+    pinElement.style.display = 'block';
+
+    markerElement.appendChild(labelElement);
+    markerElement.appendChild(pinElement);
+
+    map.addObject(
+      new H.map.DomMarker(VAULTMAN_HOUSE_LOCATION, {
+        icon: new H.map.DomIcon(markerElement),
+      })
+    );
     new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     H.ui.UI.createDefault(map, defaultLayers);
 
