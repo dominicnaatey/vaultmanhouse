@@ -12,11 +12,11 @@ const DETAIL_ICONS = {
 export default function ContactDetails() {
   return (
     <div className="max-w-xl pt-4">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#59644D]">
+      {/* <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#59644D]">
         / Get In Touch /
-      </p>
+      </p> */}
 
-      <h1 className="mt-6 max-w-md font-hero text-4xl leading-[1.02] text-[#2D2926] md:text-[4rem]">
+      <h1 className="mt-6 max-w-md font-hero text-4xl md:text-4xl leading-[1.2] text-[#2D2926]">
         We are always ready to help you and answer your questions
       </h1>
 
