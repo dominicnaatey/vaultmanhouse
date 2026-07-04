@@ -28,20 +28,18 @@ export default function AboutGrowthSection() {
         </div>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-12 grid gap-6">
         {ABOUT_OPERATIONS.map((item) => (
           <article
             key={item.title}
-            className="flex flex-col justify-between rounded-[1.75rem] border border-[#2D2926]/8 bg-[#8F9A80] p-8"
+            className="rounded-[3rem] border border-[#2D2926]/6 bg-[#F3E287]/70 px-8 py-10 shadow-[0_18px_35px_rgba(45,41,38,0.06)] md:px-12 md:py-12"
           >
-            <div>
-              <div className="mb-4 flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E287] text-[#2D2926]">
-                  <Factory className="h-5 w-5" />
-                </div>
-                <h3 className="font-hero text-2xl leading-tight text-white">{item.title}</h3>
-              </div>
-              <p className="mt-4 text-sm font-normal leading-relaxed text-white">
+            <div className="flex h-full flex-col">
+              <Factory className="h-10 w-10 text-black" strokeWidth={2.2} />
+              <h3 className="mt-10 font-sans text-4xl font-bold leading-tight text-black">
+                {item.title}
+              </h3>
+              <p className="mt-8 max-w-3xl text-xl leading-[1.45] text-black/80">
                 {item.description}
               </p>
             </div>
