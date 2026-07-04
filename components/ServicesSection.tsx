@@ -37,14 +37,14 @@ const SERVICES = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-36 px-6 md:px-16 bg-[#8F9A80]">
+    <section className="py-36 px-6 md:px-16 bg-[#8F9A80]/30">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between lg:items-end gap-8 mb-16">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-white/80 border-2 border-white/50 rounded-full px-4 py-1.5 mb-6 inline-block">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#8F9A80]/90 border-2 border-[#8F9A80]/70 rounded-full px-4 py-1.5 mb-6 inline-block">
               Our Services
             </span>
-            <h2 className="font-hero text-4xl md:text-6xl text-white max-w-4xl leading-tight">
+            <h2 className="font-extrabold text-4xl md:text-[40px] text-black max-w-2xl leading-tight">
               What Vaultman House Offers Across The Supply Chain
             </h2>
           </div>
@@ -55,7 +55,7 @@ export default function ServicesSection() {
           {SERVICES.map((item, i) => (
             <div key={i} className="group relative h-105 rounded-4xl overflow-hidden cursor-pointer shadow-lg">
               <div className="absolute inset-0 z-10 bg-linear-to-t from-[#2B3521] via-[#2B3521]/25 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 z-10 h-0 bg-linear-to-t from-[#2B3521] via-[#2B3521]/70 to-transparent opacity-0 transition-all duration-500 ease-out group-hover:h-full group-hover:opacity-100" />
+              <div className="absolute inset-x-0 bottom-0 z-10 h-0 bg-linear-to-t from-[#2B3521] via-[#2B3521]/95 to-transparent opacity-0 transition-all duration-500 ease-out group-hover:h-full group-hover:opacity-100" />
               <Image
                 src={item.image}
                 fill
