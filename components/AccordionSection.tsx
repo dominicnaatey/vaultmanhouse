@@ -51,7 +51,7 @@ export default function AccordionSection() {
         <span className="text-xs font-bold uppercase tracking-wider text-white/80 border-2 border-white/50 rounded-full px-4 py-1.5 mb-10 w-max">
           Why Choose Vaultman House
         </span>
-        <h2 className="font-hero text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
+        <h2 className="font-extrabold text-4xl md:text-[40px] lg:text-[40px] mb-16 leading-tight">
           Built for Reliable Agro Trade Across West Africa
         </h2>
 
@@ -79,7 +79,7 @@ export default function AccordionSection() {
                   </div>
                 </button>
                 {isOpen && (
-                  <p className="mt-5 text-sm md:text-base text-white/80 leading-relaxed pr-8 lg:pr-16">
+                  <p className="mt-5 text-sm md:text-base font-normal text-white leading-normal pr-8 lg:pr-16">
                     {item.content}
                   </p>
                 )}
