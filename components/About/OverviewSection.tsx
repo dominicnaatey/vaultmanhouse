@@ -10,15 +10,15 @@ export default function OverviewSection() {
         <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
           Company Overview
         </span>
-        <h2 className="max-w-xl font-hero font-extrabold text-4xl leading-tight md:text-[50px]">
+        <h2 className="max-w-xl font-extrabold text-4xl leading-tight md:text-[40px]">
           <span className="font-extrabold">Built as a connected ecosystem, not just a single business</span>
         </h2>
-        <p className="mt-6 max-w-xl text-sm md:text-base leading-relaxed text-[#2D2926]/70 ">
+        <p className="mt-6 max-w-xl text-sm font-normal md:text-base leading-normal text-gray-900 ">
           Founded in 2020 after a careful study of economic patterns and trade
           data, Vaultman House was created as a self-serving and self-sustaining
           business ecosystem with expert control across critical sectors.
         </p>
-        <p className="mt-4 max-w-xl text-sm md:text-base leading-relaxed text-[#2D2926]/70 ">
+        <p className="mt-4 max-w-xl text-sm font-normal md:text-base leading-normal text-gray-900 ">
           Its branches are designed to work both independently and dependently
           toward one goal: building an organization capable of sustaining
           meaningful, comfortable, and high-quality human living.
@@ -40,7 +40,7 @@ export default function OverviewSection() {
                 </div>
                 <h3 className="font-hero text-2xl leading-tight text-white">{item.title}</h3>
               </div>
-              <p className="mt-3 max-w-md text-sm font-normal leading-relaxed text-white">
+              <p className="mt-3 max-w-md text-sm font-normal leading-normal text-white">
                 {item.description}
               </p>
             </article>
