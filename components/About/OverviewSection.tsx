@@ -39,14 +39,14 @@ export default function OverviewSection() {
             return (
               <article
                 key={item.title}
-                className={`min-h-[15rem] rounded-[2rem] border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
+                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
               >
                 <div className="flex h-full flex-col">
                   <Icon className="h-5 w-5 text-[#111111]" strokeWidth={2.2} />
-                  <h3 className="mt-7 max-w-[12rem] font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
+                  <h3 className="mt-7 max-w-48 font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
                     {item.title}
                   </h3>
-                  <p className="mt-5 max-w-[15rem] text-sm leading-[1.55] text-[#111111]/82">
+                  <p className="mt-5 max-w-60 text-sm leading-[1.55] text-[#111111]/82">
                     {item.description}
                   </p>
                 </div>
