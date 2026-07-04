@@ -13,13 +13,13 @@ export default function AboutGrowthSection() {
           <span className="mb-6 inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#8F9A80] border-2 border-[#8F9A80]/60 rounded-full px-4 py-1.5 w-max">
             How It Started
           </span>
-          <h2 className="max-w-xl font-hero text-4xl leading-tight md:text-5xl">
+          <h2 className="max-w-xl font-extrabold text-4xl leading-tight md:text-[40px]">
             Agribusiness was the first sector identified for growth
           </h2>
         </div>
 
         <div className="flex flex-col justify-center lg:pt-12">
-          <p className="max-w-xl text-sm leading-relaxed text-[#2D2926]/75 md:text-base">
+          <p className="max-w-xl text-sm font-normal leading-normal text-gray-900 md:text-base">
             The first branch to be developed was agribusiness, with commodity
             trading at its core. Since then, Vaultman House has built a record
             of over 4,000 MT of soybean supply, equal to about 80 trailers
