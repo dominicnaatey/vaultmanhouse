@@ -48,43 +48,45 @@ export default function Header() {
       }}
       className={`sticky top-0 z-50 flex items-center justify-between overflow-hidden px-16 will-change-transform ${
         isAtTop
-          ? 'bg-[#F9F7F2]'
-          : 'bg-[#F9F7F2]/75 backdrop-blur-md border-b border-[#2D2926]/10'
+          ? 'bg-white'
+          : 'bg-white/75 backdrop-blur-md border-b border-[#2D2926]/10'
       }`}
     >
-      <div className="relative h-8 w-30 cursor-pointer">
-        <Image
-          src="/vault-logo-yellow-3.svg"
-          alt="Vaultman House logo"
-          fill
-          className="object-contain object-left"
-          priority
-        />
-      </div>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+        <div className="relative h-8 w-30 cursor-pointer">
+          <Image
+            src="/vault-logo-yellow-3.svg"
+            alt="Vaultman House logo"
+            fill
+            className="object-contain object-left"
+            priority
+          />
+        </div>
 
-      <nav className="font-ui hidden lg:flex items-center gap-8 text-xs  normal-case">
-        {NAV_ITEMS.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            className="hover:text-[#8F9A80] font-light transition-colors uppercase"
-          >
-            {item.label}
-          </a>
-        ))}
-      </nav>
+        <nav className="font-ui hidden lg:flex items-center gap-8 text-xs normal-case">
+          {NAV_ITEMS.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="hover:text-[#8F9A80] font-light transition-colors uppercase"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
 
-      <div className="flex items-center gap-4">
-        {/* <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
-          <ShoppingBag className="w-5 h-5" />
-        </button>
-        <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
-          <Search className="w-5 h-5" />
-        </button> */}
-        <Button className="hidden text-xs md:inline-flex">Get in Touch</Button>
-        <button className="lg:hidden p-2 hover:bg-[#Eae7de] rounded-full transition-colors">
-          <Menu className="w-6 h-6" />
-        </button>
+        <div className="flex items-center gap-4">
+          {/* <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
+            <ShoppingBag className="w-5 h-5" />
+          </button>
+          <button className="p-2 hover:bg-[#Eae7de] rounded-full transition-colors hidden sm:block">
+            <Search className="w-5 h-5" />
+          </button> */}
+          <Button className="hidden text-xs md:inline-flex">Get in Touch</Button>
+          <button className="lg:hidden p-2 hover:bg-[#Eae7de] rounded-full transition-colors">
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
       </div>
     </motion.header>
   );
