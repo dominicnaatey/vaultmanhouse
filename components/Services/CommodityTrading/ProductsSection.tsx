@@ -4,7 +4,7 @@ import { PRODUCTS } from './Data';
 
 export default function ProductsSection() {
   return (
-    <section className="mt-24 max-w-4xl mx-auto">
+    <section id="commodities" className="mt-24 max-w-4xl mx-auto scroll-mt-24">
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
         Our Agro Commodity Trading Products
       </h2>
