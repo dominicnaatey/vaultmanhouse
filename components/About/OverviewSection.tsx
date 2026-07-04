@@ -40,14 +40,14 @@ export default function OverviewSection() {
             return (
               <article
                 key={item.title}
-                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass} ${heightClass}`}
+                className={`min-h-60 rounded-4xl bg-[#F3E287]/0 duration-300 hover:bg-[#F3E287]/70 transition-colors px-8 py-10 group-hover:shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass} ${heightClass}`}
               >
-                <div className="flex h-full flex-col">
+                <div className="flex h-full flex-col gap-5">
                   <Icon className="h-7 w-7 text-black" strokeWidth={2.2} />
-                  <h3 className="mt-7 font-sans text-2xl font-bold leading-normal text-black">
+                  <h3 className="font-sans text-xl font-bold leading-normal text-black">
                     {item.title}
                   </h3>
-                  <p className="mt-5 max-w-[18rem] text-sm leading-[1.55] text-[#111111]/82">
+                  <p className="text-[15px] font-normal leading-normal text-black">
                     {item.description}
                   </p>
                 </div>
