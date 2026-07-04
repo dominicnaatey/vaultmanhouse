@@ -1,11 +1,37 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import Button from './ui/Button';
 
 const POSTS = [
-  { tag: 'Harvest', date: 'AUGUST 18, 2025', title: 'Latest Updates in Global Agriculture' },
-  { tag: 'Agriculture', date: 'AUGUST 18, 2025', title: 'How Technology Is Changing Agriculture' },
-  { tag: 'Agri-Tech', date: 'AUGUST 18, 2025', title: 'Organic vs. Conventional Farming' },
-];
+  {
+    tag: 'Export',
+    date: 'JULY 03, 2026',
+    title: 'How Vaultman House Prepares Agro Commodities for Regional Export',
+    excerpt:
+      'A practical look at quality checks, documentation, and logistics steps that keep commodity shipments moving smoothly from Ghana to destination markets.',
+    image: '/images/export.webp',
+    href: '/services/exportation',
+  },
+  {
+    tag: 'Processing',
+    date: 'JULY 01, 2026',
+    title: 'Why Better Processing Improves Value for Shea, Sesame, and Soybeans',
+    excerpt:
+      'From cleaning and sorting to packaging, every processing decision affects shelf life, buyer confidence, and the final market value of each product.',
+    image: '/images/processing.webp',
+    href: '/services/processing',
+  },
+  {
+    tag: 'Commodities',
+    date: 'JUNE 27, 2026',
+    title: 'What Buyers Look for When Sourcing Ghanaian Agro Commodities',
+    excerpt:
+      'Consistency, traceability, and dependable supply remain central for buyers sourcing peanuts, maize, cashew, and other staple commodities.',
+    image: '/images/field.webp',
+    href: '/services/commodity-trading#commodities',
+  },
+] as const;
 
 export default function BlogSection() {
   return (
@@ -24,14 +50,15 @@ export default function BlogSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {POSTS.map((item, i) => (
-            <div key={i} className="group cursor-pointer flex flex-col gap-5">
+          {POSTS.map((item) => (
+            <Link key={item.title} href={item.href} className="group flex flex-col gap-5">
               <div className="relative h-70 rounded-4xl overflow-hidden shadow-md">
                 <Image
-                  src={`https://placehold.co/600x400/EAE7DE/8F9A80.webp?text=News+${i + 1}`}
+                  src={item.image}
                   fill
                   alt={item.title}
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute top-6 left-6 bg-[#F3E287] text-[#2D2926] text-[10px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-sm">
                   {item.tag}
@@ -41,10 +68,13 @@ export default function BlogSection() {
               <h3 className="font-hero text-2xl text-[#2D2926] leading-tight group-hover:text-[#8F9A80] transition-colors">
                 {item.title}
               </h3>
+              <p className="text-sm leading-relaxed text-[#2D2926]/70">
+                {item.excerpt}
+              </p>
               <div className="flex items-center gap-2 text-sm text-[#2D2926] font-bold tracking-wide uppercase mt-2 group-hover:text-[#8F9A80] transition-colors">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#8F9A80]" /> Read More
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
