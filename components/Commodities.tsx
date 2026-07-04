@@ -34,7 +34,7 @@ export default function CommoditiesSection() {
     <section id="commodities" className="py-32 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between lg:items-end gap-12 mb-20 relative">
-          <h2 className="font-hero text-5xl sm:text-6xl md:text-8xl text-[#2D2926] leading-[1.1] tracking-tight">
+          <h2 className="font-hero text-5xl sm:text-5xl md:text-6xl text-[#2D2926] leading-[1.1] tracking-tight">
             Featured<br /><span className="text-[#8F9A80]">Commodities</span>
           </h2>
           <div className="lg:absolute lg:right-0 lg:top-8 max-w-sm">
@@ -47,7 +47,7 @@ export default function CommoditiesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 md:gap-4">
           {COMMODITIES.map((item, i) => (
             <div key={i} className="group cursor-pointer">
-              <div className="relative aspect-square rounded-4xl overflow-hidden mb-8 shadow-xl">
+              <div className="relative aspect-square rounded-4xl overflow-hidden mb-4 shadow-xl">
                 <Image
                   src={item.image}
                   fill
@@ -64,7 +64,7 @@ export default function CommoditiesSection() {
                   </span>
                 ))}
               </div> */}
-              <h3 className="font-hero font-normal text-xl text-[#2D2926] group-hover:text-[#F3E287] transition-colors">
+              <h3 className="font-hero font-normal text-base text-[#2D2926]">
                 {item.title}
               </h3>
             </div>
