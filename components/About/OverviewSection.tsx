@@ -2,7 +2,7 @@ import { ABOUT_PRINCIPLES } from './about-data';
 
 export default function OverviewSection() {
   return (
-    <section className="grid gap-8 lg:gap-14 pt-8 lg:grid-cols-[1.05fr_0.95fr] mb-36">
+    <section className="grid gap-8 pt-8 lg:gap-14 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,0.6fr)] mb-36">
       <div className="flex flex-col justify-center">
         {/* <span className="mb-6 text-[11px] font-bold uppercase tracking-[0.24em] text-[#8C6A4A]">
           Company Overview
@@ -39,11 +39,11 @@ export default function OverviewSection() {
             return (
               <article
                 key={item.title}
-                className={`min-h-60 h-full rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
+                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
               >
                 <div className="flex h-full flex-col">
-                  <Icon className="h-5 w-5 text-[#111111]" strokeWidth={2.2} />
-                  <h3 className="mt-7 max-w-[14rem] font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
+                  <Icon className="h-7 w-7 text-black" strokeWidth={2.2} />
+                  <h3 className="mt-7 font-sans text-2xl font-bold leading-normal text-black">
                     {item.title}
                   </h3>
                   <p className="mt-5 max-w-[18rem] text-sm leading-[1.55] text-[#111111]/82">
