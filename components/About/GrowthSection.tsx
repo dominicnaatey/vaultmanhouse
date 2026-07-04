@@ -1,13 +1,6 @@
-import { Globe, Handshake, Truck } from 'lucide-react';
+import { Factory } from 'lucide-react';
 
 import { ABOUT_OPERATIONS } from './about-data';
-
-const CARD_ICONS = [Globe, Truck, Handshake] as const;
-const CARD_LAYOUTS = [
-  'xl:col-start-1 xl:row-start-1',
-  'xl:col-start-1 xl:row-start-2',
-  'xl:col-start-2 xl:row-span-2 xl:self-center',
-] as const;
 
 export default function AboutGrowthSection() {
   return (
@@ -35,30 +28,25 @@ export default function AboutGrowthSection() {
         </div>
       </div>
 
-      <div className="mt-14 flex justify-center xl:justify-end">
-        <div className="grid w-full max-w-4xl gap-6 md:grid-cols-2 xl:grid-cols-[minmax(0,15rem)_minmax(0,12.5rem)] xl:grid-rows-2">
-          {ABOUT_OPERATIONS.map((item, index) => {
-            const Icon = CARD_ICONS[index] ?? Globe;
-            const layoutClass = CARD_LAYOUTS[index] ?? '';
-
-            return (
-              <article
-                key={item.title}
-                className={`min-h-[15rem] rounded-[2rem] border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
-              >
-                <div className="flex h-full flex-col">
-                  <Icon className="h-5 w-5 text-[#111111]" strokeWidth={2.2} />
-                  <h3 className="mt-7 max-w-[12rem] font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-5 max-w-[15rem] text-sm leading-[1.55] text-[#111111]/82">
-                    {item.description}
-                  </p>
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {ABOUT_OPERATIONS.map((item) => (
+          <article
+            key={item.title}
+            className="flex flex-col justify-between rounded-[1.75rem] border border-[#2D2926]/8 bg-[#8F9A80] p-8"
+          >
+            <div>
+              <div className="mb-4 flex items-center gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E287] text-[#2D2926]">
+                  <Factory className="h-5 w-5" />
                 </div>
-              </article>
-            );
-          })}
-        </div>
+                <h3 className="font-hero text-2xl leading-tight text-white">{item.title}</h3>
+              </div>
+              <p className="mt-4 text-sm font-normal leading-relaxed text-white">
+                {item.description}
+              </p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
