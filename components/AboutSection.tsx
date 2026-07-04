@@ -3,17 +3,19 @@ import Button from './ui/Button';
 
 export default function AboutSection() {
   return (
-    <section className="py-36 px-6 md:px-16 bg-[#F9F7F2]">
+    <section className="py-36 px-6 md:px-16">
       <div className="md:max-w-6xl lg:max-w-7xl mx-auto">
         <div className="flex flex-col gap-2 mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-[#59644D]/80 border-2 border-[#59644D]/50 rounded-full px-4 py-1.5 w-max mb-4">
             About Company
           </span>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 w-full">
-            <h2 className="text-4xl md:text-4xl font-extrabold text-[#2D2926] max-w-2xl leading-normal">
+            <h2 className="text-4xl md:text-[40px] font-extrabold text-[#2D2926] max-w-2xl leading-tight">
               Building Value Across Africa&apos;s Agribusiness Supply Chain
             </h2>
-            <Button className="mb-2">About Us</Button>
+            <Button className="mb-2">
+              <a href="/about">About Us</a>
+            </Button>
           </div>
         </div>
 
@@ -28,10 +30,10 @@ export default function AboutSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-          <p className="text-2xl lg:text-26px text-[#2D2926] font-medium leading-normal">
+          <p className="text-2xl lg:text-2xl text-gray-900 font-semibold leading-normal">
             Vaultman House Agro Commodities was founded in 2020 to build a diversified conglomerate across key African sectors, starting with large-scale agro-commodity trade in Ghana, Burkina Faso, and Mali.
           </p>
-          <p className="text-gray-600 text-sm md:text-[17px] leading-relaxed">
+          <p className="text-gray-900 font-normal text-sm md:text-base leading-relaxed">
             With a supply capacity of over 4,000MT+ of soybeans, we trade, produce, process, export, and transport agricultural commodities to give our clients maximum value. As we expand into processing and export, our goal is to create a sustainable agribusiness ecosystem driven by innovation, quality, transparency, and customer satisfaction.
           </p>
         </div>
