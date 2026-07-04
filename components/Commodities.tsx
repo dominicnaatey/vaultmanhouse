@@ -27,6 +27,11 @@ const COMMODITIES = [
     title: 'Shea Nuts',
     tags: ['Value Added', 'West Africa', 'Trade'],
   },
+  {
+    image: '/images/peanuts.webp',
+    title: 'Peanuts',
+    tags: ['Value Added', 'West Africa', 'Trade'],
+  },
 ];
 
 export default function CommoditiesSection() {
@@ -44,18 +49,18 @@ export default function CommoditiesSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-4">
           {COMMODITIES.map((item, i) => (
             <div key={i} className="group cursor-pointer">
-              <div className="relative aspect-square rounded-4xl overflow-hidden mb-4 shadow-xl">
+              <div className="relative aspect-3/2 rounded-4xl overflow-hidden mb-4 shadow-md">
                 <Image
                   src={item.image}
                   fill
                   alt={item.title}
-                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 20vw"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent transition-colors duration-300 group-hover:from-black/75 group-hover:via-black/20 group-hover:to-black/10" />
+                {/* <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent transition-colors duration-300 group-hover:from-black/75 group-hover:via-black/20 group-hover:to-black/10" /> */}
               </div>
               {/* <div className="flex gap-2 mb-4">
                 {item.tags.map((tag) => (
