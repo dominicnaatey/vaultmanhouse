@@ -25,8 +25,8 @@ export default function OverviewSection() {
         </p>
       </div>
 
-      <div className="flex justify-center lg:justify-end">
-        <div className="grid w-full max-w-4xl gap-6 md:grid-cols-2 xl:grid-cols-[minmax(0,15rem)_minmax(0,12.5rem)] xl:grid-rows-2">
+      <div className="w-full">
+        <div className="grid w-full gap-6 md:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.92fr)] xl:grid-rows-2">
           {ABOUT_PRINCIPLES.map((item, index) => {
             const Icon = item.icon;
             const layoutClass =
@@ -39,14 +39,14 @@ export default function OverviewSection() {
             return (
               <article
                 key={item.title}
-                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
+                className={`min-h-60 h-full rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
               >
                 <div className="flex h-full flex-col">
                   <Icon className="h-5 w-5 text-[#111111]" strokeWidth={2.2} />
-                  <h3 className="mt-7 max-w-48 font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
+                  <h3 className="mt-7 max-w-[14rem] font-sans text-[1.7rem] font-semibold leading-[1.05] text-[#111111]">
                     {item.title}
                   </h3>
-                  <p className="mt-5 max-w-60 text-sm leading-[1.55] text-[#111111]/82">
+                  <p className="mt-5 max-w-[18rem] text-sm leading-[1.55] text-[#111111]/82">
                     {item.description}
                   </p>
                 </div>
