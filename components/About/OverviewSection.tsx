@@ -35,11 +35,12 @@ export default function OverviewSection() {
                 : index === 1
                   ? 'xl:col-start-1 xl:row-start-2'
                   : 'xl:col-start-2 xl:row-span-2 xl:self-center';
+            const heightClass = index === 2 ? 'xl:min-h-[21rem]' : '';
 
             return (
               <article
                 key={item.title}
-                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass}`}
+                className={`min-h-60 rounded-4xl border border-[#2D2926]/6 bg-[#F3E287]/70 p-7 shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass} ${heightClass}`}
               >
                 <div className="flex h-full flex-col">
                   <Icon className="h-7 w-7 text-black" strokeWidth={2.2} />
