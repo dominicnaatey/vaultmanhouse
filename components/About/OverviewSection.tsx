@@ -40,7 +40,7 @@ export default function OverviewSection() {
             return (
               <article
                 key={item.title}
-                className={`min-h-60 rounded-4xl bg-[#F3E287]/0 duration-300 hover:bg-[#F3E287]/70 transition-colors px-8 py-10 group-hover:shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass} ${heightClass}`}
+                className={`min-h-60 rounded-4xl bg-[#F3E287]/0 duration-300 hover:bg-[#FEF4CC] transition-colors px-8 py-10 group-hover:shadow-[0_18px_35px_rgba(45,41,38,0.06)] ${layoutClass} ${heightClass}`}
               >
                 <div className="flex h-full flex-col gap-5">
                   <Icon className="h-7 w-7 text-black" strokeWidth={2.2} />
