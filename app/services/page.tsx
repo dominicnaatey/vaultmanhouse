@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="bg-[#F5F3EE] text-[#2D2926]">
+    <div className="bg-white text-black">
       <div className="mx-auto max-w-6xl px-6 py-18 md:px-16 md:py-36">
         <ServicesHero />
         <ServicesList />
