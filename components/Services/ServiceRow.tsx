@@ -17,15 +17,15 @@ export default function ServiceRow({
     <article className="group grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
       <div className={isTextFirst ? 'order-1' : 'order-2'}>
         <div className="max-w-md">
-          <h2 className="font-hero text-3xl leading-tight md:text-4xl">
+          <h2 className="font-hero text-3xl text-black leading-tight md:text-3xl">
             {service.title}
           </h2>
-          <p className="mt-5 text-sm leading-relaxed text-[#2D2926]/75 md:text-base">
+          <p className="mt-5 text-sm leading-relaxed text-black font-normal md:text-base">
             {service.description}
           </p>
           <Link
             href={service.link}
-            className="font-ui mt-6 inline-flex items-center gap-2 rounded-full bg-[#F3E287] px-5 py-2.5 text-xs text-[#2D2926] transition-colors hover:bg-[#E5D474]"
+            className="font-ui mt-6 inline-flex items-center gap-2 rounded-full bg-[#F3E287] px-5 py-2.5 text-xs text-black transition-colors hover:bg-[#E5D474]"
           >
             Explore Service
             <ArrowRight className="h-3.5 w-3.5" />
