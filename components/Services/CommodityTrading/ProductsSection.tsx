@@ -16,7 +16,7 @@ export default function ProductsSection() {
         {PRODUCTS.map((product) => (
           <article
             key={product.name}
-            className="rounded-3xl bg-[#FEF4CC] px-5 py-5"
+            className="rounded-3xl bg-[#955400] px-5 py-5"
           >
             <div className="relative overflow-hidden rounded-3xl">
               <div className="relative aspect-5/4">
@@ -29,7 +29,7 @@ export default function ProductsSection() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-base font-bold leading-tight text-black">
+            <p className="mt-4 text-base font-bold leading-tight text-white">
               {product.name}
             </p>
           </article>
