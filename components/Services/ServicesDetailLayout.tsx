@@ -20,7 +20,7 @@ export default function ServicesDetailLayout({
   }
 
   return (
-    <div className="bg-white text-[#2D2926]">
+    <div className="bg-white text-black">
       <div className="mx-auto max-w-7xl py-18 md:py-24">
         <div className="gap-10 lg:grid lg:grid-cols-[170px_minmax(0,1fr)_170px] lg:gap-16">
           <ServiceDetailSidebar />
