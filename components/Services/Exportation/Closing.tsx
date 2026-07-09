@@ -1,7 +1,7 @@
 export default function Closing() {
   return (
     <section className="mx-auto mt-24 max-w-4xl">
-      <p className="text-sm font-normal leading-relaxed text-[#2D2926]/75 md:text-base">
+      <p className="text-sm font-normal leading-relaxed md:text-base">
         Entering the export space presents both challenges and opportunities.
         Competitive pressure, regulatory requirements, and logistics complexity
         demand careful execution, but they also open the door to new customers,
