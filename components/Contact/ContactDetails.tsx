@@ -16,11 +16,11 @@ export default function ContactDetails() {
         / Get In Touch /
       </p> */}
 
-      <h1 className="mt-6 max-w-md font-hero text-4xl md:text-4xl leading-[1.2] text-[#2D2926]">
+      <h1 className="mt-6 max-w-md font-hero text-4xl md:text-4xl leading-[1.2] text-black">
         We are always ready to help you and answer your questions
       </h1>
 
-      <p className="mt-6 max-w-lg text-sm leading-relaxed text-[#2D2926]/62 md:text-base">
+      <p className="mt-6 max-w-lg text-sm font-normal leading-relaxed text-black md:text-base">
         Reach out to Vaultman House for commodity sourcing, export coordination,
         processing enquiries, and agribusiness partnerships across Ghana and the
         region.
@@ -33,8 +33,8 @@ export default function ContactDetails() {
           return (
             <div key={detail.label}>
               <div className="flex items-center gap-3">
-                <Icon className="h-4 w-4 text-[#59644D]" />
-                <p className="text-sm font-semibold text-[#2D2926]">{detail.label}</p>
+                <Icon className="h-4 w-4 text-black" />
+                <p className="text-sm font-semibold text-black">{detail.label}</p>
               </div>
 
               {'href' in detail && detail.href ? (
@@ -43,7 +43,7 @@ export default function ContactDetails() {
                   className="mt-3 inline-flex items-start gap-2 text-sm leading-relaxed text-[#2D2926]/72 transition-colors hover:text-[#59644D] md:text-[15px]"
                 >
                   <span>{detail.value}</span>
-                  <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0" />
+                  {/* <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0" /> */}
                 </Link>
               ) : (
                 <p className="mt-3 max-w-[16rem] text-sm leading-relaxed text-[#2D2926]/72 md:text-[15px]">
