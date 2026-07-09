@@ -29,7 +29,7 @@ export default function ProductsSection() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-base font-bold leading-tight text-white">
+            <p className="mt-4 text-base font-semibold leading-tight text-white">
               {product.name}
             </p>
           </article>
