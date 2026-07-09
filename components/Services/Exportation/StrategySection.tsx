@@ -3,10 +3,10 @@ import { EXPORT_STRATEGIES } from './Data';
 export default function StrategySection() {
   return (
     <section className="mx-auto mt-24 max-w-4xl">
-      <h2 className="font-hero text-2xl leading-tight md:text-3xl">
+      <h2 className="font-hero text-2xl text-black leading-tight md:text-3xl">
         Our Export Strategy
       </h2>
-      <p className="mt-4 text-sm leading-relaxed text-[#2D2926]/70 md:text-base">
+      <p className="mt-4 text-sm leading-relaxed text-black font-normal md:text-base">
         Exporting agro commodities is central to our growth strategy. It helps
         us diversify markets, increase revenue potential, and support wider
         regional economic development.
