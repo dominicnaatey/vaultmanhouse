@@ -4,12 +4,12 @@ import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactForm() {
   return (
-    <div className="rounded-4xl bg-white p-8 shadow-[0_18px_50px_rgba(45,41,38,0.08)] md:p-10 lg:p-12">
+    <div className="rounded-4xl bg-[#F5F3EE] p-8 md:p-10 lg:p-12">
       <div className="max-w-md">
-        <h2 className="font-hero text-3xl leading-tight text-[#2D2926] md:text-[2.5rem]">
+        <h2 className="font-hero text-3xl leading-tight text-black md:text-[2.5rem]">
           Get in Touch
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-[#2D2926]/62 md:text-[15px]">
+        <p className="mt-4 text-sm leading-relaxed text-black md:text-[15px] font-normal">
           Define your goals and identify areas where Vaultman House can add value to
           your business.
         </p>
@@ -24,7 +24,7 @@ export default function ContactForm() {
               placeholder="Full name"
               autoComplete="name"
               required
-              className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-[#2D2926]/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
+              className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-black/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
             />
           </label>
 
@@ -35,7 +35,7 @@ export default function ContactForm() {
               placeholder="Email"
               autoComplete="email"
               required
-              className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-[#2D2926]/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
+              className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-black/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
             />
           </label>
         </div>
@@ -47,7 +47,7 @@ export default function ContactForm() {
             placeholder="Phone"
             autoComplete="tel"
             required
-            className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-[#2D2926]/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
+            className="h-12 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 placeholder:text-black/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
           />
         </label>
 
@@ -56,12 +56,12 @@ export default function ContactForm() {
             name="message"
             placeholder="Message"
             required
-            className="min-h-28 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 py-3 placeholder:text-[#2D2926]/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
+            className="min-h-28 rounded-none border-x-0 border-t-0 border-b border-[#2D2926]/14 bg-transparent px-0 py-3 placeholder:text-black/42 focus-visible:border-[#59644D]/15 focus-visible:ring-0"
           />
         </label>
 
         <div className="pt-4">
-          <Button variant="dark" className="min-w-44 px-7 py-3">
+          <Button variant="black" className="min-w-44 px-7 py-3">
             Send a message
           </Button>
         </div>
