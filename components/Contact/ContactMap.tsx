@@ -126,17 +126,19 @@ export default function ContactMap() {
       zoom: 15,
       pixelRatio: window.devicePixelRatio || 1,
     });
+    const mapPinIcon = new H.map.Icon(MAP_PIN_PATH, {
+      size: { w: 35, h: 45 },
+      anchor: { x: 17.5, y: 45 },
+    });
     const markerElement = document.createElement('div');
     markerElement.style.display = 'flex';
-    markerElement.style.flexDirection = 'column';
-    markerElement.style.alignItems = 'center';
-    markerElement.style.transform = 'translate(-50%, -100%)';
-    markerElement.style.whiteSpace = 'nowrap';
+    markerElement.style.justifyContent = 'center';
+    markerElement.style.width = '140px';
+    markerElement.style.transform = 'translate(-50%, -62px)';
     markerElement.style.pointerEvents = 'none';
 
     const labelElement = document.createElement('div');
     labelElement.textContent = 'Vaultman House';
-    labelElement.style.marginBottom = '8px';
     labelElement.style.borderRadius = '999px';
     labelElement.style.backgroundColor = '#FFFFFF';
     labelElement.style.padding = '6px 12px';
@@ -146,17 +148,9 @@ export default function ContactMap() {
     labelElement.style.fontWeight = '600';
     labelElement.style.lineHeight = '1';
     labelElement.style.color = '#2D2926';
-
-    const pinElement = document.createElement('img');
-    pinElement.src = MAP_PIN_PATH;
-    pinElement.alt = 'Vaultman House marker';
-    pinElement.width = 35;
-    pinElement.height = 45;
-    pinElement.style.display = 'block';
-
     markerElement.appendChild(labelElement);
-    markerElement.appendChild(pinElement);
 
+    map.addObject(new H.map.Marker(VAULTMAN_HOUSE_LOCATION, { icon: mapPinIcon }));
     map.addObject(
       new H.map.DomMarker(VAULTMAN_HOUSE_LOCATION, {
         icon: new H.map.DomIcon(markerElement),
