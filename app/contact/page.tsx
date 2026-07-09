@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div id="contact-us" className="bg-[#F5F3EE] text-[#2D2926]">
+    <div id="contact-us" className="bg-white text-black">
       <div className="mx-auto max-w-7xl px-6 py-18 md:px-16 md:py-24">
         <ContactSection />
       </div>
