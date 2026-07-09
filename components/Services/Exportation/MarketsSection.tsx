@@ -6,7 +6,7 @@ export default function MarketsSection() {
       <h2 className="font-hero text-2xl leading-tight md:text-3xl">
         Markets We Are Exploring
       </h2>
-      <p className="mt-4 text-sm font-normal leading-relaxed text-[#2D2926]/70 md:text-base">
+      <p className="mt-4 text-sm font-normal leading-relaxed md:text-base">
         We are exploring opportunities in West Africa, East Africa, Europe, and
         Asia to expand our global presence, diversify our customer base, and
         improve competitiveness.
@@ -16,12 +16,12 @@ export default function MarketsSection() {
         {EXPORT_MARKETS.map((market) => (
           <article
             key={market.name}
-            className="rounded-3xl border border-[#2D2926]/8 bg-[#806F63] px-6 py-6 shadow-[0_12px_30px_rgba(45,41,38,0.05)]"
+            className="rounded-3xl bg-[#FEF4CC] hover:bg-[#FEF4CC] px-8 py-10"
           >
-            <h3 className="font-hero text-2xl leading-tight text-white">
+            <h3 className="font-bold text-2xl leading-tight text-black">
               {market.name}
             </h3>
-            <p className="mt-4 text-sm font-normal leading-relaxed text-white/90">
+            <p className="mt-4 text-sm font-normal leading-relaxed text-black">
               {market.description}
             </p>
           </article>
