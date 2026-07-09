@@ -16,17 +16,15 @@ export default function StrategySection() {
         {EXPORT_STRATEGIES.map((item) => (
           <article
             key={item.id}
-            className="rounded-3xl bg-[#8F9A80] p-6 text-white"
+            className="flex flex-col  px-8 py-10 gap-4 rounded-3xl border border-[#2D2926]/6 bg-[#FEF4CC] shadow-[0_18px_35px_rgba(45,41,38,0.06)] text-black"
           >
-            <div className="mb-4 flex items-center gap-3">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F3E287] text-[10px] font-bold text-[#2D2926]">
-                {item.id}
-              </span>
-              <h3 className="font-hero text-2xl leading-tight text-white/95">
-                {item.title}
-              </h3>
-            </div>
-            <p className="text-sm leading-relaxed text-white/80">
+            <span className="flex items-center justify-start text-base font-bold text-black">
+              {item.id}
+            </span>
+            <h3 className="font-hero text-2xl leading-tight text-black">
+              {item.title}
+            </h3>
+            <p className="text-sm font-normal leading-relaxed text-black">
               {item.description}
             </p>
           </article>
