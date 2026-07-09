@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonVariant = 'primary' | 'outline' | 'white' | 'dark';
+type ButtonVariant = 'primary' | 'outline' | 'white' | 'dark' | 'black';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -15,6 +15,7 @@ const variants: Record<ButtonVariant, string> = {
   outline: "border border-[#2D2926] text-[#2D2926] hover:bg-[#2D2926] hover:text-[#F9F7F2]",
   white: "bg-white text-[#2D2926] hover:bg-[#F9F7F2]",
   dark: "bg-[#8F9A80] text-white hover:bg-[#7a856a]",
+  black: "bg-black text-white hover:bg-black/85",
 };
 
 export default function Button({ children, className = '', variant = 'primary' }: ButtonProps) {
