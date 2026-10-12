@@ -1,39 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from './ui/Button';
-
-const POSTS = [
-  {
-    tag: 'Export',
-    date: 'JULY 03, 2026',
-    title: 'How Vaultman House Prepares Agro Commodities for Regional Export',
-    excerpt:
-      'A practical look at quality checks, documentation, and logistics steps that keep commodity shipments moving smoothly from Ghana to destination markets.',
-    image: '/images/export.webp',
-    href: '/services/exportation',
-  },
-  {
-    tag: 'Processing',
-    date: 'JULY 01, 2026',
-    title: 'Why Better Processing Improves Value for Shea, Sesame, and Soybeans',
-    excerpt:
-      'From cleaning and sorting to packaging, every processing decision affects shelf life, buyer confidence, and the final market value of each product.',
-    image: '/images/processing.webp',
-    href: '/services/processing',
-  },
-  {
-    tag: 'Commodities',
-    date: 'JUNE 27, 2026',
-    title: 'What Buyers Look for When Sourcing Ghanaian Agro Commodities',
-    excerpt:
-      'Consistency, traceability, and dependable supply remain central for buyers sourcing peanuts, maize, cashew, and other staple commodities.',
-    image: '/images/field.webp',
-    href: '/services/commodity-trading#commodities',
-  },
-] as const;
+import { BLOG_POSTS } from './Blog/blog-data';
 
 export default function BlogSection() {
+  const posts = BLOG_POSTS.slice(0, 3);
+
   return (
     <section className="py-32 px-6 md:px-16 bg-[#F9F7F2]">
       <div className="max-w-7xl mx-auto">
@@ -45,13 +17,18 @@ export default function BlogSection() {
             <h2 className="font-extrabold text-4xl md:text-[40px] text-[#2D2926] max-w-xl leading-tight">
               Explore Our Latest News &amp; Tips
             </h2>
-            <Button variant="dark" className="mb-2">Read More</Button>
+            <Link
+              href="/blog"
+              className="mb-2 inline-flex w-max items-center justify-center rounded-full bg-[#8F9A80] px-8 py-3 text-sm text-white transition-all duration-300 hover:bg-[#7a856a]"
+            >
+              Read More
+            </Link>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {POSTS.map((item) => (
-            <Link key={item.title} href={item.href} className="group flex flex-col gap-5">
+          {posts.map((item) => (
+            <Link key={item.slug} href={`/blog/${item.slug}`} className="group flex flex-col gap-5">
               <div className="relative h-70 rounded-4xl overflow-hidden shadow-md">
                 <Image
                   src={item.image}

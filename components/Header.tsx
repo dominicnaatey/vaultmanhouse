@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
   { label: 'Commodities', href: '/services/commodity-trading#commodities' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
