@@ -11,19 +11,19 @@ export default function HeroSection3() {
           MOBILE LAYOUT  (hidden on md and above)
           White bg · large heading · subtitle · buttons · rounded image below
       ───────────────────────────────────────────────────────────────────── */}
-      <section className="md:hidden bg-white px-6 pt-10 pb-16">
+      <section className="md:hidden bg-white px-6 pt-25 pb-16">
         {/* Heading */}
-        <h1 className="font-sans text-[34px] text-center font-extrabold leading-tight text-black">
+        <h1 className="font-sans text-3xl text-center font-bold leading-tight text-black">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-5 text-base leading-relaxed text-center text-gray-900">
+        <p className="mt-5 text-base leading-relaxed text-center font-normal text-black">
           The future rests on agribusiness and its supply chain network
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex flex-wrap items-center gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link
             href="/services"
             className="group inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#1d1d1d]"
