@@ -28,7 +28,7 @@ export default function HeroSection3() {
             We Trade, Produce, Process, and Export to give you maximum value.
           </h1>
 
-          <p className="mt-5 text-sm md:text-base leading-relaxed text-gray-600">
+          <p className="mt-5 text-sm md:text-base leading-relaxed text-gray-900">
             The future rests on agribusiness and its supply chain network
           </p>
 
