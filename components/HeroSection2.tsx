@@ -6,8 +6,8 @@ import { ChevronRight } from 'lucide-react';
 
 export default function HeroSection2() {
   return (
-    <section className="bg-[#FCF9F2] px-6 py-20 md:px-10 lg:px-16 lg:pt-52">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-16">
+    <section className="bg-white px-6 py-20 md:px-10 lg:px-16 lg:pt-52">
+      <div className="mx-auto flex flex-col max-w-7xl items-center gap-12 lg:grid lg:grid-cols-2 lg:gap-16">
         <div className="">
           <h1 className="max-w-lg font-sans text-4xl md:text-[40px] font-extrabold leading-tighti text-black">
             We Trade, Produce, Process, and Export to give you maximum value.
@@ -35,7 +35,7 @@ export default function HeroSection2() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-4xl shadow-[0_24px_48px_rgba(45,41,38,0.08)]">
+        <div className="order-first lg:order-none relative overflow-hidden rounded-4xl shadow-[0_24px_48px_rgba(45,41,38,0.08)]">
           <div className="relative aspect-video w-full">
             <Image
               src="/images/soybeans.webp"
