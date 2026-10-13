@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { X } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import Button from './ui/Button';
 import MobileMenu from './ui/MobileMenu';
@@ -29,13 +30,28 @@ function HamburgerIcon() {
 export default function Header() {
   const [scrolled, setScrolled] = React.useState(false);
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const headerRef = React.useRef<HTMLElement>(null);
+  const [headerHeight, setHeaderHeight] = React.useState(68);
 
+  /* Track scroll */
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  /* Measure actual header height so the popup starts exactly below it */
+  React.useEffect(() => {
+    const measure = () => {
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.getBoundingClientRect().height);
+      }
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, [scrolled]); // re-measure when scrolled state changes height
 
   /* Lock body scroll while menu is open */
   React.useEffect(() => {
@@ -45,17 +61,18 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Header bar ─────────────────────────────────────────────────── */}
+      {/* ── Sticky header bar ──────────────────────────────────────────── */}
       <header
+        ref={headerRef}
         className={`sticky top-0 flex items-center px-6 md:px-16 transition-all duration-300 ${
           scrolled
             ? 'h-[60px] bg-white/80 backdrop-blur-md border-b border-black/10'
             : 'h-[68px] bg-white'
         }`}
-        style={{ zIndex: 40 }}
+        style={{ zIndex: 9998 }} /* above the popup so logo stays on top */
       >
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-          {/* Logo */}
+          {/* Logo — always visible */}
           <Link href="/" className="relative h-10 w-32">
             <Image
               src="/vault-logo-yellow-3.svg"
@@ -81,24 +98,30 @@ export default function Header() {
 
           {/* Right actions */}
           <div className="flex items-center gap-3">
+            {/* Desktop-only CTA */}
             <Button className="hidden text-xs lg:inline-flex">Get in Touch</Button>
 
-            {/* Hamburger — mobile & tablet only */}
+            {/* Hamburger / X — mobile & tablet only */}
             <button
               type="button"
-              onClick={() => setMobileOpen(true)}
-              aria-label="Open menu"
+              onClick={() => setMobileOpen((v) => !v)}
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
               className="lg:hidden p-1"
             >
-              <HamburgerIcon />
+              {mobileOpen ? <X size={24} strokeWidth={1.8} /> : <HamburgerIcon />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* ── Mobile menu popup ──────────────────────────────────────────── */}
+      {/* ── Mobile menu popup — starts below the header ─────────────────── */}
       <AnimatePresence>
-        {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
+        {mobileOpen && (
+          <MobileMenu
+            headerHeight={headerHeight}
+            onClose={() => setMobileOpen(false)}
+          />
+        )}
       </AnimatePresence>
     </>
   );

@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
 import { X } from 'lucide-react';
 
 const NAV_ITEMS = [
@@ -15,10 +13,12 @@ const NAV_ITEMS = [
 ];
 
 interface MobileMenuProps {
+  /** Height of the sticky header in px so the overlay starts below it */
+  headerHeight: number;
   onClose: () => void;
 }
 
-export default function MobileMenu({ onClose }: MobileMenuProps) {
+export default function MobileMenu({ headerHeight, onClose }: MobileMenuProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,78 +27,51 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
       transition={{ duration: 0.2, ease: 'easeInOut' }}
       style={{
         position: 'fixed',
-        inset: 0,
+        top: headerHeight,   // sits directly below the header
+        left: 0,
+        right: 0,
+        bottom: 0,
         zIndex: 9999,
         backgroundColor: '#ffffff',
         display: 'flex',
         flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '28px',
       }}
     >
-      {/* Top bar — logo */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          padding: '16px 24px',
-        }}
-      >
-        <Link
-          href="/"
+      {/* Nav links */}
+      {NAV_ITEMS.map((item) => (
+        <a
+          key={item.href}
+          href={item.href}
           onClick={onClose}
-          style={{ position: 'relative', height: 40, width: 128, display: 'block' }}
-        >
-          <Image
-            src="/vault-logo-yellow-3.svg"
-            alt="Vaultman House logo"
-            fill
-            className="object-contain object-left"
-          />
-        </Link>
-      </div>
-
-      {/* Nav links + close button — vertically & horizontally centred */}
-      <nav
-        style={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '28px',
-        }}
-      >
-        {NAV_ITEMS.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            onClick={onClose}
-            style={{
-              fontSize: '1.5rem',
-              fontWeight: 400,
-              color: '#1a1a1a',
-              textDecoration: 'none',
-            }}
-          >
-            {item.label}
-          </a>
-        ))}
-
-        {/* Close — X icon below the links */}
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close menu"
           style={{
-            marginTop: '12px',
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            padding: 8,
+            fontSize: '1.5rem',
+            fontWeight: 400,
+            color: '#1a1a1a',
+            textDecoration: 'none',
           }}
         >
-          <X size={28} strokeWidth={1.5} color="#1a1a1a" />
-        </button>
-      </nav>
+          {item.label}
+        </a>
+      ))}
+
+      {/* X close button below the links */}
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Close menu"
+        style={{
+          marginTop: '12px',
+          background: 'none',
+          border: 'none',
+          cursor: 'pointer',
+          padding: 8,
+        }}
+      >
+        <X size={28} strokeWidth={1.5} color="#1a1a1a" />
+      </button>
     </motion.div>
   );
 }
