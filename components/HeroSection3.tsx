@@ -13,12 +13,12 @@ export default function HeroSection3() {
       ───────────────────────────────────────────────────────────────────── */}
       <section className="md:hidden bg-white px-6 pt-10 pb-16">
         {/* Heading */}
-        <h1 className="font-sans text-[2.6rem] font-extrabold leading-tight text-black">
+        <h1 className="font-sans text-[34px] text-center font-extrabold leading-tight text-black">
           We Trade, Produce, Process, and Export to give you maximum value.
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-5 text-base leading-relaxed text-gray-600">
+        <p className="mt-5 text-base leading-relaxed text-center text-gray-900">
           The future rests on agribusiness and its supply chain network
         </p>
 
@@ -71,17 +71,17 @@ export default function HeroSection3() {
             priority
           />
           {/* White fade from the left */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 via-[35%] to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-r from-white via-white via-35% to-transparent" />
         </div>
 
         {/* Text — vertically centred, left-aligned */}
         <div className="relative z-10 flex items-center min-h-[92vh] px-12 lg:px-20">
           <div className="max-w-lg">
-            <h1 className="font-sans text-4xl lg:text-[56px] font-extrabold leading-tight text-black">
+            <h1 className="font-sans text-4xl lg:text-5xl font-extrabold leading-tight text-black">
               We Trade, Produce, Process, and Export to give you maximum value.
             </h1>
 
-            <p className="mt-5 text-base leading-relaxed text-gray-600">
+            <p className="mt-5 text-base leading-relaxed text-gray-900">
               The future rests on agribusiness and its supply chain network
             </p>
 
