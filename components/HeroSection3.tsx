@@ -18,7 +18,7 @@ export default function HeroSection3() {
           priority
         />
         {/* Fade gradient: white on left, transparent on right */}
-        <div className="absolute inset-0 bg-linear-to-r from-white via-white/95 via-25% to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-white via-white/65 md:via-white/95 via-70% md:via-25% to-transparent" />
       </div>
 
       {/* Text content — left-aligned, sitting above the image */}
