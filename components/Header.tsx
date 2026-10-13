@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { AnimatePresence } from 'framer-motion';
 import Button from './ui/Button';
 import MobileMenu from './ui/MobileMenu';
 
@@ -96,7 +97,9 @@ export default function Header() {
       </header>
 
       {/* ── Mobile menu popup ──────────────────────────────────────────── */}
-      {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
+      <AnimatePresence>
+        {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}
+      </AnimatePresence>
     </>
   );
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { X } from 'lucide-react';
@@ -19,7 +20,11 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ onClose }: MobileMenuProps) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
       style={{
         position: 'fixed',
         inset: 0,
@@ -94,6 +99,6 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
           <X size={28} strokeWidth={1.5} color="#1a1a1a" />
         </button>
       </nav>
-    </div>
+    </motion.div>
   );
 }
