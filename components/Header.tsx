@@ -99,7 +99,9 @@ export default function Header() {
           {/* Right actions */}
           <div className="flex items-center gap-3">
             {/* Desktop-only CTA */}
-            <Button className="hidden text-xs lg:inline-flex">Get in Touch</Button>
+            <div className="hidden lg:block">
+              <Button className="text-xs">Get in Touch</Button>
+            </div>
 
             {/* Hamburger / X — mobile & tablet only */}
             <button
