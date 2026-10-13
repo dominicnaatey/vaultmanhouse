@@ -18,13 +18,13 @@ export default function HeroSection3() {
           priority
         />
         {/* Fade gradient: white on left, transparent on right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 via-[35%] to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-white via-white/95 via-25% to-transparent" />
       </div>
 
       {/* Text content — left-aligned, sitting above the image */}
       <div className="relative z-10 flex items-center min-h-[92vh] px-6 md:px-12 lg:px-20">
         <div className="max-w-lg">
-          <h1 className="font-sans text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-tight text-black">
+          <h1 className="font-sans text-4xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-black">
             We Trade, Produce, Process, and Export to give you maximum value.
           </h1>
 
