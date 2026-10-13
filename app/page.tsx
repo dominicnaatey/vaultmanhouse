@@ -1,3 +1,4 @@
+// import HeroSection from '@/components/HeroSection';
 import HeroSection2 from '@/components/HeroSection2';
 import AboutSection from '@/components/AboutSection';
 // import FeaturesStrip from '@/components/FeaturesStrip';
