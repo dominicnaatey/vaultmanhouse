@@ -6,11 +6,11 @@ export default function AboutSection() {
     <section className="py-36 px-6 md:px-16">
       <div className="md:max-w-6xl lg:max-w-7xl mx-auto">
         <div className="flex flex-col gap-2 mb-10">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#59644D]/80 border-2 border-[#59644D]/50 rounded-full px-4 py-1.5 w-max mb-4">
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-wider text-[#59644D]/80 w-max mb-4">
             About Company
           </span>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 w-full">
-            <h2 className="text-4xl md:text-[40px] font-extrabold text-[#2D2926] max-w-2xl leading-tight">
+            <h2 className="text-3xl md:text-[40px] font-extrabold text-[#2D2926] max-w-2xl leading-tight">
               Building Value Across Africa&apos;s Agribusiness Supply Chain
             </h2>
             <Button className="mb-2">

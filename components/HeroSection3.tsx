@@ -11,7 +11,7 @@ export default function HeroSection3() {
           MOBILE LAYOUT  (hidden on md and above)
           White bg · large heading · subtitle · buttons · rounded image below
       ───────────────────────────────────────────────────────────────────── */}
-      <section className="md:hidden bg-white px-6 pt-25 pb-16">
+      <section className="md:hidden bg-white px-6 pt-25 pb-16 md:px-16">
         {/* Heading */}
         <h1 className="font-sans text-3xl text-center font-bold leading-tight text-black">
           We Trade, Produce, Process, and Export to give you maximum value.
