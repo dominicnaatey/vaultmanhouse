@@ -64,7 +64,7 @@ export default function Header() {
       {/* ── Sticky header bar ──────────────────────────────────────────── */}
       <header
         ref={headerRef}
-        className={`sticky top-0 flex items-center transition-all duration-300 ${
+        className={`sticky top-0 flex items-center px-6 md:px-16 transition-all duration-300 ${
           scrolled
             ? 'h-15 bg-white/80 backdrop-blur-md border-b border-black/10'
             : 'h-15 bg-white'
